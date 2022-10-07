@@ -419,3 +419,93 @@ footer
 .recetas-box .receta-nombre{font-size: 25px;}
 
 /*------------------------------------------------------*/
+/*media 1200px*/
+
+
+@media screen and (max-width: 1200px) 
+{
+   body
+   {
+    background-color: cadetblue;
+   }
+   /*------------------------------------------------------*/
+   /*Media de seccion historia*/
+   .box-historia
+   {
+       grid-template-rows: auto 500px auto;
+       grid-template-areas: 
+       "texto texto"
+       "fotoBandeja fotoGalleta"
+       "textoDos textoDos";
+       
+   }
+   .pos-img-uno
+   {
+    border-radius: 38px 0px 0px 38px;
+
+   }
+   .img-historia-dos
+   {
+       border-radius: 0px 38px 38px 0px;
+       width: 100%;
+       height: auto;
+   }
+}
+
+/*------------------------------------------------------*/
+/*media 1024px*/
+@media screen and (max-width: 1024px) 
+{
+    body
+    {
+        background-color: greenyellow;
+    }
+
+    .paragraph-style
+    {
+        font-size: 18px;
+    }
+}
+/*------------------------------------------------------*/
+/*media 917px*/
+@media screen and (max-width: 917px)
+{
+/*------------------------------------------------------*/
+/* Tamaños h*/
+    h1{font-size: var(--text-xl);}
+    h2{font-size: var(--text-l);}
+    h3{font-size: 31px;}
+    h4{font-size: 31px;}
+    h5{font-size: 31px;}
+
+    body
+    {
+        background-color: aqua;
+    }  
+
+    .paragraph-style
+    {
+        font-size: 16px;
+    }
+
+    .img-historia-dos
+    {
+        border-radius: 0px 38px 38px 0px;
+        width: auto;
+        height: 100%;
+    }
+
+    .box-present .present-section .title-present
+    {
+        font-size: 25px;
+    }
+    .box-present
+    {
+        grid-template-columns: 1fr;
+    }
+    .present-section .link-present
+    {
+        padding: 10px;
+        font-size: 16px;
+    }
+} 
