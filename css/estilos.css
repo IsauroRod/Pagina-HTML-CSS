@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Fauna+One&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+:root
+{
+    --primary: #384073;
+    --secondary: #F5E78E;
+    --celeste: #A3D9FF;
+    --marron: #826754;
+    --blanco: #FFFFFF;
+    
+    --text-xxl: 55px;
+    --text-xl: 48px;
+    --text-l: 40px;
+    --text-m: 20px;
+    --text-s: 18px;
+
+    --sp-xl: 120px;
+    --sp-l: 80px;
+    --sp-m: 50px;
+    --sp-s: 28px;
+    
+    
+}
+
+body
+{
+    background-color:var(--secondary) ;
+    font-family: 'Fauna One', serif;
+    color:var(--marron);
+    font-size: var(--text-m);
+
+}
+header{background-color: var(--primary);}
+a{text-decoration: none;}
+h1{font-size: var(--text-xxl);}
+h2{font-size: var(--text-xl);}
+h3{font-size: var(--text-l); }
+h4{font-size: var(--text-l); }
+
+/*------------------------------------------------------*/
+/* Estilos comunes */
+
+.enlaces-estilo
+{
+    font-size: var(--text-s);
+    color: var(--blanco);
+}
+
+.borde-derecho
+{
+    border-right-width: 3px;
+    border-right-style:solid;
+    border-width: 2px;
+    border-right-color: var(--blanco);
+}
+
+.estilos-titulos
+{
+    font-family: 'Cinzel';
+    width: 100%;
+    text-align: center;
+    color:white;
+    letter-spacing: 0.1em;
+}
+
+.parallax
+{
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+}
+
+.titulo-estilo-sec
+{
+    font-size: var(--text-xxl);
+    color: var(--marron);
+}
+
+.subtitulo-estilo-sec
+{
+    font-size: 25px;
+    color: var(--marron);
+}
+
+.boton-estilo
+{
+    display: inline-block;
+    font-family: 'Fauna One', serif;
+    font-size: 17px;
+    border:none;
+    border-radius:12px ;
+    background-color: #A3D9FF;
+    padding: 8px;
+}
+
+.boton-redondo
+{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+}
+
+
+.indep-margin
+{
+    padding: 28px;
+}
+
+.paragraph-style
+{
+    text-align: justify;
+}
+
+/*------------------------------------------------------*/
+/* Navbar */
+.navbar 
+{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 14px 28px;
+    align-items: center;
+}
+
+.navbar .menu
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    
+}
+.navbar .menu .menu-item
+{
+    display: inline-block;
+}
+
+
+/*------------------------------------------------------*/
+/* Imagen con parallax al inicio */
+.superphoto
+{
+    height: 90vh;
+    overflow: hidden ;
+    background-image:url(../visuales/muchasGalletas.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*------------------------------------------------------*/
+/* Seccion donde se habla de la historia de la galleta*/
+
+#historia
+{
+    display: flex;
+    justify-content: center;
+    margin: 28px 0px;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+#historia article
+{
+    display: flex;
+    width: 627px;
+    flex-direction: column;
+    gap: 14px;
+}
+
+#historia figure
+{
+    height: 100%;
+    overflow: hidden;
+}
+
+.box-width
+{
+    width: 1280px;
+}
+
+.img-historia-uno
+{
+    border-radius: 0px 0px 0px 38px;
+    width: auto;
+    height: 100%;
+}
+.img-historia-dos
+{
+    border-radius: 0px 38px 38px 0px;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/*------------------------------------------------------*/
+/* Segundo background con parallax */
+
+.background-inter
+{
+    height: 739px;
+    background-image: url(../visuales/andrew-valdivia-Way9MgCwFg8-unsplash\ 2.png);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 28px;
+}
+
+/*------------------------------------------------------*/
+/*Estilos links de redireccionamiento, final de pagina*/
+
+.box-present
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 372px;
+    overflow: hidden;
+}
+
+.box-present .present-section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 627px;
+}
+
+.box-present .present-section .title-present
+{
+    font-size: 32px;
+    color: var(--marron);
+}
+
+.box-present .present-section .img-presentacion
+{
+    height: 278px;
+    overflow: hidden;
+    border-radius: 33px;
+}
+
+.present-section .link-present
+{
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #384073;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+/*------------------------------------------------------*/
+/*Footer estilos*/
+
+footer
+{
+    display: block;
+    background-color: #384073;
+    color: var(--blanco);
+    height: 100px;
+    padding: 33px 0px;
+}
+
+.copyfooter
+{
+    width: auto;
+    font-size: 18px;
+}
+
+/*------------------------------------------------------*/
+/*Parte de pedidos*/
+
+.formulario-vender
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.vender
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    width:337px;
+}
+.box-article-photo
+{
+    height: 392px;
+}
+.vender-precio
+{
+    display: inline-block;
+    background-color: red;
+    color:#FFFFFF;
+    width: 106px;
+    height: 41px;
+    padding-top: 5px;
+    border-radius:0px 19px 0px 21px ;
+    position: relative;
+    bottom: 394px;
+    left: 235px;
+    text-align: center;
+    
+}
+
+.vender-imagen
+{
+    border-radius: 22px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #384073;
+}
+
+.tabla-venta
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.boton-procesar
+{
+    width: 153px;
+    height: 41px;
+    position: relative;
+    bottom: 53px;
+    left: 290px;
+}
+
+/*------------------------------------------------------*/
+/*Parte de informacion en contacto*/
+
+.informacion
+{
+    display: inline-block;
+    background-color:var(--celeste);
+    padding: 28px;
+}
+
+/*------------------------------------------------------*/
+/*Parte de mandar el email en contacto*/
+
+.box-contactar
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0px;
+}
+
+.formulario-box
+{
+    background-color:var(--blanco);
+    width: 837px;
+}
+
+.formulario-box .formulario .cabecera{background-color: var(--celeste);}
+
+.formulario-box .formulario .tipo-info
+{
+    display: block;
+    border:none;
+    width: 635px;
+    border-bottom: 1px solid var(--marron);
+}
+
+.background-grey{background-color: #D9D9D9;}
+
+/*------------------------------------------------------*/
+/*Articulos de receta*/
+
+.recetas-box
+{
+    display: inline-block;
+    width: 585px;
+}
+.recetas-box .receta-foto{height: 395px;}
+.recetas-box .receta-foto img{border-radius: 20px;}
+.recetas-box .receta-nombre{font-size: 25px;}
+
+/*------------------------------------------------------*/
