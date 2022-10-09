@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuketon Cookies</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <a class="menu-logo" href="../index.html"><img src="../visuales/Group 192.png" alt=""></a>
+            <a class="menu-logo" href="../index.html"><img class="animate__animated animate__flipInX" src="../visuales/Group 192.png" alt=""></a>
             
             <ul class="menu ">
                 <li class="menu-item ">
@@ -72,19 +76,24 @@
         <aside class="formulario-box">
             <form action="" class="formulario">
                 <h3 class="cabecera">Envianos un E-Mail</h3>
+                <div class="ped-form">
                 <label  for="nombre">Nombre: </label>
                 <input class="tipo-info" type="text" name="nombre" value="" required>
 
                 <label  for="mail">Email: </label>
                 <input class="tipo-info" type="email" name="mail" value="" required>
+                
+                <label  for="telefono">Telefono: </label>
+                <input class="tipo-info" type="email" name="mail" value="" required>
 
                 <label  for="encabezado">Encabezado: </label>
                 <input class="tipo-info" type="text" name="encabezado" value="" required>
 
-                <label  for="contenido">Contenido: </label>
-                <textarea name="texto" id="texto" cols="100%" rows="10" class="background-grey"></textarea>
+                <label  for="contenido" class="marg-mod">Contenido: </label>
+                <textarea name="texto" id="texto" cols="100%" rows="10" class="background-grey marg-mod"></textarea>
                 
-                <input class="boton-estilo" type="submit" value="Enviar correo">
+                <input class="boton-estilo pos-boton" type="submit" value="Enviar correo">
+                </div>
             </form>
         </aside>
         </div>
