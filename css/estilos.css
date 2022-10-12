@@ -46,6 +46,11 @@ h1{font-size: var(--text-xxl);}
 h2{font-size: var(--text-xl);}
 h3{font-size: var(--text-l); }
 h4{font-size: var(--text-l); }
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    margin-bottom: 0;}
+figure {margin: 0}
+p{margin-bottom: 0;}
+ol, ul, dl{margin-bottom:0;}
 
 /*------------------------------------------------------*/
 /* Estilos comunes */
@@ -312,11 +317,20 @@ footer
 /*------------------------------------------------------*/
 /*Parte de pedidos*/
 
+.vender-box
+{
+   display: flex;
+   justify-content: center; 
+}
 .formulario-vender
 {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1440px;
 }
+
+
 
 .vender
 {
@@ -325,6 +339,7 @@ footer
     justify-content: stretch;
     align-items: center;
     width:337px;
+    margin:20px 20px -17px 20px;
 }
 .box-article-photo
 {
@@ -369,6 +384,17 @@ footer
     left: 290px;
 }
 
+.botones-vender
+{
+    display: flex;
+    width: 339px;
+    border-radius: 0px 0px 22px 22px ;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 95px;
+    backdrop-filter: blur(3.5px);
+}
+
 /*------------------------------------------------------*/
 /*Parte de informacion en contacto*/
 
@@ -392,7 +418,7 @@ footer
 .quienes-box
 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1.5fr 0.97fr;
     grid-template-rows: 0.3fr 1fr 0fr;
     grid-template-areas: 
     "textUno imgDos"
@@ -400,6 +426,14 @@ footer
     "imgUno textDos";
     gap:28px;
     margin: 50px 80px;
+    max-width: 1440px;
+}
+
+.contenedor-quienes
+{
+    display: flex;
+    justify-content: center;
+    
 }
 
 .quienes-textoDos
@@ -410,6 +444,7 @@ grid-area: textDos;
 {
 grid-area: textUno;
 }
+
 .quienes-fUno
 {
 grid-area: imgUno;
@@ -429,8 +464,8 @@ border-radius: 21px;
 }
 .quienes-foto-d
 {
-width: 100%;
-height: auto;
+width: auto;
+height: 100%;
 }
 
 /*------------------------------------------------------*/
@@ -510,7 +545,7 @@ height: auto;
     flex-direction: column;
     align-items: center;
 }
-.recetas-box .receta-foto{height: 395px;}
+.recetas-box .receta-foto{max-height: 395px; min-width: 290px;}
 .recetas-box .receta-foto img{border-radius: 20px;}
 .recetas-box .receta-nombre{font-size: 25px;}
 
@@ -520,10 +555,6 @@ height: auto;
 
 @media screen and (max-width: 1200px) 
 {
-   body
-   {
-    background-color: cadetblue;
-   }
    /*------------------------------------------------------*/
    /*Media de seccion historia*/
    .box-historia
@@ -552,11 +583,6 @@ height: auto;
 /*media 1024px*/
 @media screen and (max-width: 1024px) 
 {
-    body
-    {
-        background-color: greenyellow;
-    }
-
     .paragraph-style
     {
         font-size: 18px;
@@ -573,11 +599,6 @@ height: auto;
     h3{font-size: 31px;}
     h4{font-size: 31px;}
     h5{font-size: 31px;}
-
-    body
-    {
-        background-color: aqua;
-    }  
 
     .paragraph-style
     {
