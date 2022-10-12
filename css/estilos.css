@@ -55,10 +55,35 @@ ol, ul, dl{margin-bottom:0;}
 /*------------------------------------------------------*/
 /* Estilos comunes */
 
+
 .enlaces-estilo
 {
     font-size: var(--text-s);
     color: var(--blanco);
+    padding: 5px 10px;
+}
+
+.barra-intermedia
+{
+
+    font-size: var(--text-s);
+    color: var(--blanco);
+    padding: 5px 0px;
+}
+
+.enlaces-estilo:hover
+{
+    background-image:url(../visuales/galletaSinComer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color:#FFFFFF;
+    
+}
+.enlaces-estilo:active
+{
+    background-image:url(../visuales/galletaComida.png);
+    color:#FFFFFF;
 }
 
 .borde-derecho
@@ -151,6 +176,8 @@ ol, ul, dl{margin-bottom:0;}
 {
     display: inline-block;
 }
+
+.img-nav{width: 100%;}
 
 
 /*------------------------------------------------------*/
@@ -358,6 +385,7 @@ footer
     bottom: 394px;
     left: 235px;
     text-align: center;
+    z-index: 1;
     
 }
 
@@ -367,6 +395,7 @@ footer
     border-style: solid;
     border-width: 3px;
     border-color: #384073;
+    z-index: ;
 }
 
 .tabla-venta
@@ -406,6 +435,7 @@ footer
     background-color:var(--celeste);
     padding: 28px;
     border-radius: 20px;
+    margin: 28px;
 }
 
 .cabecera-informacion
@@ -474,8 +504,8 @@ height: 100%;
 .box-contactar
 {
     display: flex;
+    flex-wrap: wrap-reverse;
     justify-content: center;
-    gap: 28px;
     align-items: baseline;
     margin: 50px 0px;
 }
@@ -483,7 +513,7 @@ height: 100%;
 .formulario-box
 {
     background-color:var(--blanco);
-    width: 837px;
+    margin: 28px;
 }
 
 .formulario-box .formulario .cabecera
@@ -496,7 +526,7 @@ height: 100%;
 {
     display: block;
     border:none;
-    width: 635px;
+
     border-bottom: 1px solid var(--marron);
 }
 
@@ -506,7 +536,7 @@ height: 100%;
     padding-top: 40px;
     padding-bottom: 28px;
     display: grid;
-    grid-template-columns:repeat(2, 1fr);
+    grid-template-columns:auto auto;
     grid-template-rows:repeat(5, 0,5fr) ;
     grid-row-gap: 50px;
 }
@@ -525,6 +555,11 @@ height: 100%;
     width: 158px;
     grid-column: 2/3;
     justify-self: end;
+}
+
+.ubicacion
+{
+    width:359px; height:270px;
 }
 
 /*------------------------------------------------------*/
@@ -548,6 +583,17 @@ height: 100%;
 .recetas-box .receta-foto{max-height: 395px; min-width: 290px;}
 .recetas-box .receta-foto img{border-radius: 20px;}
 .recetas-box .receta-nombre{font-size: 25px;}
+
+/*------------------------------------------------------*/
+/*media 1310px*/
+
+@media screen and (max-width: 1310px)
+{
+    .quienes-box
+    {
+        grid-template-rows: 0.3fr 0.5fr auto;
+    }
+}
 
 /*------------------------------------------------------*/
 /*media 1200px*/
@@ -577,6 +623,7 @@ height: 100%;
        width: 100%;
        height: auto;
    }
+
 }
 
 /*------------------------------------------------------*/
@@ -587,6 +634,16 @@ height: 100%;
     {
         font-size: 18px;
     }
+
+    .quienes-box
+    {
+        grid-template-rows: 0.3fr 1fr 0fr;
+        grid-template-areas: 
+        "textUno textUno"
+        "imgUno imgDos"
+        "textDos textDos";
+    }
+
 }
 /*------------------------------------------------------*/
 /*media 917px*/
@@ -625,4 +682,51 @@ height: 100%;
         padding: 10px;
         font-size: 16px;
     }
-} 
+
+    .quienes-box
+    {
+
+        grid-template-rows: 0.3fr 0.8fr 0fr;
+    } 
+}
+
+/*media 768px*/
+@media screen and (max-width: 768px)
+{
+    .quienes-box
+    {
+        grid-template-rows: repeat(4, auto) ;
+        margin: 50px 10px;
+        grid-template-areas: 
+        "textUno textUno"
+        "imgUno imgUno"
+        "textDos textDos"
+        "imgDos imgDos";
+    }
+
+    .figure-nav{width: 300px; height: 100%;}
+
+}
+
+/* ---------------------------------------------------------------------- */
+/* Medias extras utilizado para modificar el nav de boostrap */
+@media (max-width: 575.98px) {
+    .figure-nav{width: 225px; height: 100%;}}
+@media (max-width: 360px) {
+        .figure-nav{width: 180px; height: 100%;}}
+@media (max-width: 991.5px) 
+{
+    .bg-caja-collapse
+    {
+          background-color:#384073 ;
+          opacity: 90%;
+          padding: 20px;
+          z-index: 2;
+
+    }
+
+    .barra-intermedia
+    {
+        display: none;
+    }
+}
