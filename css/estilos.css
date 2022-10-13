@@ -575,7 +575,6 @@ height: 100%;
 
 .recetas-box
 {
-    width: 585px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -583,6 +582,7 @@ height: 100%;
 .recetas-box .receta-foto{max-height: 395px; min-width: 290px;}
 .recetas-box .receta-foto img{border-radius: 20px;}
 .recetas-box .receta-nombre{font-size: 25px;}
+
 
 /*------------------------------------------------------*/
 /*media 1310px*/
