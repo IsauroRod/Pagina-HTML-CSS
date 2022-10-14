@@ -51,6 +51,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 figure {margin: 0}
 p{margin-bottom: 0;}
 ol, ul, dl{margin-bottom:0;}
+article{padding: 0px;}
 
 /*------------------------------------------------------*/
 /* Estilos comunes */
@@ -81,7 +82,7 @@ ol, ul, dl{margin-bottom:0;}
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-color: var(--primary);
+    background-color: var(--marron);
     margin: 0px 5px;
     border-radius: 10px;
    /*  border-style:solid;
@@ -510,8 +511,8 @@ border-radius: 21px;
 }
 .quienes-foto-d
 {
-width: auto;
-height: 100%;
+width: 100%;
+height: auto;
 }
 
 /*------------------------------------------------------*/
@@ -601,6 +602,18 @@ height: 100%;
 
 
 /*------------------------------------------------------*/
+/*media 1561px*/
+
+@media screen and (max-width: 1561px)
+{
+.quienes-foto-d
+{
+    height: 100%;
+    width: auto;
+}
+}
+
+/*------------------------------------------------------*/
 /*media 1310px*/
 
 @media screen and (max-width: 1310px)
@@ -614,6 +627,8 @@ height: 100%;
 {
     max-width: 90vw;
 }
+
+.quienes-foto-d{height: auto;width: 100%;}
 }
 
 /*------------------------------------------------------*/
@@ -644,6 +659,12 @@ height: 100%;
        width: 100%;
        height: auto;
    }
+
+   .quienes-foto-d
+{
+    height: 100%;
+    width: auto;
+}
 
 }
 
@@ -730,6 +751,9 @@ height: 100%;
     .titulo-estilo-sec{font-size: 31px;}
     .subtitulo-estilo-sec{font-size: 20px;}
     .paragraph-style{font-size: 14px;}
+
+    .quienes-foto-d{width: 100%; height: auto;}
+    .quienes-foto-i{width: 100%; height: auto;}
 }
 /*media 600px*/
 @media screen and (max-width: 600px)
