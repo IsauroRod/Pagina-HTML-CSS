@@ -787,8 +787,8 @@ h4.subcabecera-informacion{font-size: 23px}
     left: 152px;
 }
 
-.vender{width: 282.75px;}
-.botones-vender{width: 278.75px; bottom:97.5px;}
+.vender{width: 280.75px;}
+.botones-vender{width: 276.75px; bottom:97.5px;}
 .box-article-photo{height: 323px;}
 .vender-precio {
     width: 89px;
@@ -804,7 +804,7 @@ h4.subcabecera-informacion{font-size: 23px}
 }
 
 .venta-texto{font-size: 16px;}
-
+}
 /*------------------------------------------------------*/
 /*media 360px*/
 @media screen and (max-width: 360px) {
