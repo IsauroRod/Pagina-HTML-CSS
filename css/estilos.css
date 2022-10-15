@@ -38,7 +38,6 @@ body
     font-family: 'Fauna One', serif;
     color:var(--marron);
     font-size: var(--text-m);
-
 }
 header{background-color: var(--primary);}
 a{text-decoration: none;}
@@ -52,6 +51,7 @@ figure {margin: 0}
 p{margin-bottom: 0;}
 ol, ul, dl{margin-bottom:0;}
 article{padding: 0px;}
+
 
 /*------------------------------------------------------*/
 /* Estilos comunes */
@@ -85,12 +85,7 @@ article{padding: 0px;}
     background-color: var(--marron);
     margin: 0px 5px;
     border-radius: 10px;
-   /*  border-style:solid;
-    border-color:var(--celeste);
-    border-width: 1px; */
-    color:#FFFFFF;
-
-    
+    color:#FFFFFF;  
 }
 .enlaces-estilo:active
 {
@@ -142,10 +137,20 @@ article{padding: 0px;}
     text-align: center;
     font-family: 'Fauna One', serif;
     font-size: 17px;
+    color: black;
     border:none;
     border-radius:12px ;
     background-color: #A3D9FF;
     padding: 3px 8px;
+    transition: transform .04s ease-out;
+    transition: background-color .04s ease-out;
+}
+
+
+.boton-estilo:active
+{
+    transform: scale(0.95);
+    background-color: #73c5ff;
 }
 
 .boton-redondo
@@ -155,16 +160,9 @@ article{padding: 0px;}
     border-radius: 50%;
 }
 
+.indep-margin{padding: 28px;}
 
-.indep-margin
-{
-    padding: 28px;
-}
-
-.paragraph-style
-{
-    text-align: justify;
-}
+.paragraph-style{text-align: justify;}
 
 /*------------------------------------------------------*/
 /* Navbar */
@@ -229,10 +227,7 @@ article{padding: 0px;}
     
 }
 
-.textoUno
-{
-grid-area: texto;
-}
+.textoUno{grid-area: texto;}
 .pos-img-uno
 {
 
@@ -246,21 +241,13 @@ grid-area: texto;
     border-radius: 0px 38px 38px 0px;
     overflow: hidden;
 }
-.textoDos
-{
-    grid-area:textoDos ;
-}
+.textoDos{grid-area:textoDos ;}
 
-.box-width
-{
-    width: 1280px;
-}
+.box-width{width: 1280px;}
 .img-historia-uno
 {
-    
     width: auto;
     height: 100%;
-
 }
 .img-historia-dos
 {
@@ -317,12 +304,15 @@ grid-area: texto;
     max-width: 573px;
     overflow: hidden;
     border-radius: 33px;
+    
 }
 
 .img-presentacion img
 {
     width: 100%;
     height: auto;
+    filter: blur(3px);
+    
 }
 
 .present-section .link-present
@@ -330,8 +320,16 @@ grid-area: texto;
 
     color: #FFFFFF;
     background-color: #384073;
-    padding: 8px;
+    padding: 8px 67px;
     border-radius: 20px;
+    transition: transform .1s ease-out;
+    transition: background-color .1s linear;
+}
+
+.present-section .link-present:active
+{
+    transform: scale(0.9);
+    background-color: #293372;
 }
 
 /*------------------------------------------------------*/
@@ -382,10 +380,7 @@ footer
     width:337px;
     margin:20px 20px -17px 20px;
 }
-.box-article-photo
-{
-    height: 392px;
-}
+
 .vender-precio
 {
     display: inline-block;
@@ -403,14 +398,17 @@ footer
     
 }
 
+.box-article-photo{height: 392px;}
+
 .vender-imagen
 {
     border-radius: 22px;
     border-style: solid;
     border-width: 3px;
     border-color: #384073;
-    z-index: ;
 }
+
+.venta-texto{text-align: center;}
 
 .tabla-venta
 {
@@ -453,12 +451,11 @@ footer
     margin: 28px;
 }
 
-.cabecera-informacion
-{
-    text-align: center;
-}
+.cabecera-informacion{text-align: center;}
 
 .datos{color: black;}
+
+
 
 /*------------------------------------------------------*/
 /*Pagina quienes*/
@@ -483,14 +480,8 @@ footer
     
 }
 
-.quienes-textoDos
-{
-grid-area: textDos;
-}
-.quienes-textoUno
-{
-grid-area: textUno;
-}
+.quienes-textoDos{grid-area: textDos;}
+.quienes-textoUno{grid-area: textUno;}
 
 .quienes-fUno
 {
@@ -562,6 +553,7 @@ height: auto;
 .background-grey{
     background-color: #D9D9D9;
     max-width: 635px;
+    height: 200px;
 }
 .marg-mod
 {
@@ -573,6 +565,8 @@ height: auto;
     grid-column: 2/3;
     justify-self: end;
 }
+
+.pad-boton{padding: 18px 24px;}
 
 .ubicacion
 {
@@ -672,11 +666,7 @@ height: auto;
 /*media 1024px*/
 @media screen and (max-width: 1024px) 
 {
-    .paragraph-style
-    {
-        font-size: 18px;
-    }
-
+    .paragraph-style{font-size: 18px;}
     .quienes-box
     {
         grid-template-rows: 0.3fr 1fr 0fr;
@@ -687,22 +677,28 @@ height: auto;
     }
 
 }
+
+/*------------------------------------------------------*/
+/*media 991.5px - para modificar cosas del bootstrap*/
+
+@media screen and (max-width: 991.5px) 
+{
+    .bg-caja-collapse{z-index: 2;}
+    .barra-intermedia{display: none;}
+    .navbar-toggler{z-index: 3;}
+}
+
 /*------------------------------------------------------*/
 /*media 917px*/
 @media screen and (max-width: 917px)
 {
-/*------------------------------------------------------*/
-/* Tamaños h*/
     h1{font-size: var(--text-xl);}
     h2{font-size: var(--text-l);}
     h3{font-size: 31px;}
     h4{font-size: 31px;}
     h5{font-size: 31px;}
 
-    .paragraph-style
-    {
-        font-size: 16px;
-    }
+    .paragraph-style{font-size: 16px;}
 
     .img-historia-dos
     {
@@ -714,22 +710,11 @@ height: auto;
     .box-present .present-section .title-present
     {
         font-size: 25px;
+        margin-top: 10px;
     }
-    .box-present
-    {
-        grid-template-columns: 1fr;
-    }
-    .present-section .link-present
-    {
-        padding: 10px;
-        font-size: 16px;
-    }
-
-    .quienes-box
-    {
-
-        grid-template-rows: 0.3fr 0.8fr 0fr;
-    } 
+    .box-present{grid-template-columns: 1fr;}
+    .present-section .link-present{font-size: 16px;}
+    .quienes-box{grid-template-rows: 0.3fr 0.8fr 0fr;} 
 }
 
 /*media 768px*/
@@ -738,12 +723,13 @@ height: auto;
     .quienes-box
     {
         grid-template-rows: repeat(4, auto) ;
-        margin: 50px 10px;
+        margin: 23px 10px;
         grid-template-areas: 
         "textUno textUno"
-        "imgUno imgUno"
+        "imgDos imgDos"
         "textDos textDos"
-        "imgDos imgDos";
+        "imgUno imgUno";
+        gap: 14px;
     }
     
     .figure-nav{width: 300px; height: 100%;}
@@ -773,6 +759,15 @@ h4.subcabecera-informacion{font-size: 23px}
 }
 
 /*------------------------------------------------------*/
+/*media 575.98px*/
+@media screen and (max-width: 575.98px) 
+{
+    .figure-nav{width: 225px; height: 100%;}
+    .box-present .present-section .img-presentacion{height: 190px;}
+}
+
+
+/*------------------------------------------------------*/
 /*media 480px*/
 @media screen and (max-width: 480px){
 .ped-form
@@ -780,7 +775,7 @@ h4.subcabecera-informacion{font-size: 23px}
     display: flex;
     flex-direction: column;
     max-width: 90vw;
-    gap: 10px;
+    gap: 5px;
 }
 .marg-mod{margin-bottom: 18px;}
 .ubicacion{width: 240px ; overflow: hidden;}
@@ -791,30 +786,26 @@ h4.subcabecera-informacion{font-size: 23px}
     bottom: 38px;
     left: 152px;
 }
+
+.vender{width: 282.75px;}
+.botones-vender{width: 278.75px; bottom:97.5px;}
+.box-article-photo{height: 323px;}
+.vender-precio {
+    width: 89px;
+    height: 35px;
+    padding-top: 2px;
+    bottom: 320px;
+    left: 192px;
+}
+.vender-imagen
+{
+    height: 100%;
+    width: auto;
 }
 
-/* ---------------------------------------------------------------------- */
-/* Medias extras utilizado para modificar el nav de boostrap */
-@media screen and (max-width: 575.98px) 
-{
-    .figure-nav{width: 225px; height: 100%;}
-    .box-present .present-section .img-presentacion{height: 190px;}
-}
+.venta-texto{font-size: 16px;}
+
+/*------------------------------------------------------*/
+/*media 360px*/
 @media screen and (max-width: 360px) {
         .figure-nav{width: 180px; height: 100%;}}
-@media screen and (max-width: 991.5px) 
-{
-    .bg-caja-collapse
-    {
-          background-color:#384073 ;
-          opacity: 90%;
-          padding: 20px;
-          z-index: 2;
-
-    }
-
-    .barra-intermedia
-    {
-        display: none;
-    }
-}
