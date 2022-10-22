@@ -20,41 +20,42 @@
         margin: 50px 80px;
         max-width: 1440px;
 
-
-        .quienes-textoDos
-        {
-            grid-area: textDos;
-        }
-        .quienes-textoUno
+        
+        & :nth-child(1)
         {
             grid-area: textUno;
         }
 
-
-        .quienes-fUno
+        & :nth-child(2)
         {
-        grid-area: imgUno;
-        overflow: hidden;
-        border-radius: 21px;
-
+            grid-area: imgUno;
+            overflow: hidden;
+            border-radius: 21px;
+            
             .quienes-foto-i
             {
                 width: auto;
                 height: 100%;
             }
-            
         }
-        .quienes-fDos
+
+        & :nth-child(3)
         {
-        grid-area: imgDos;
-        overflow: hidden;
-        border-radius: 21px;
-        
+            grid-area: imgDos;
+            overflow: hidden;
+            border-radius: 21px;
+            
             .quienes-foto-d
             {
-            width: 100%;
-            height: auto;
+                width: 100%;
+                height: auto;
             }
+            
+        }
+
+        & :nth-child(4)
+        {
+            grid-area: textDos;
         }
     }
 }

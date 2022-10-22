@@ -42,7 +42,7 @@
 
     .box-historia
     {
-        .pos-img-dos
+        & :nth-child(3)
         {
             .img-historia-dos
             {
@@ -80,6 +80,7 @@
     
 }
 
+/*------------------------------------------------------*/
 /*media 768px*/
 @media screen and (max-width: 768px)
 {
@@ -106,7 +107,7 @@
     {
         .quienes-box
         {
-            .quienes-fUno
+            & :nth-child(2)
             {
                 .quienes-foto-i
                 {
@@ -115,7 +116,7 @@
                 }
             }
     
-            .quienes-fDos
+            & :nth-child(3)
             {
                 .quienes-foto-d
                 {
@@ -128,17 +129,39 @@
         
     }
 
+    .footer
+    {
+        flex-direction: column;
+        gap:20px;
+        margin-bottom: 20px;
+        .footer-ubicacion
+        {
+            width: 100%;
+        }
+
+        .info-titulos
+        {
+            font-size: 28px; 
+
+        }
+        .info-datos
+        {
+            font-size: 18px; 
+
+        }
+    }
+
     .box-historia
     {
         margin: 28px 10px; 
         grid-template-rows:auto 67vw auto;
     }
 }
+
+/*------------------------------------------------------*/
 /*media 600px*/
 @media screen and (max-width: 600px)
 {
-/*------------------------------------------------------*/
-/* Tamaños h*/
 h1{font-size: 30px;}
 h2{font-size: 30px;}
 h3{font-size: $text-m;}

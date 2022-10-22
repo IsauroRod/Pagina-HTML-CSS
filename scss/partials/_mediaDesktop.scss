@@ -8,7 +8,7 @@
 {
     .quienes-box
     {
-        .quienes-fDos
+        & :nth-child(3)
         {
             .quienes-foto-d
             {
@@ -30,23 +30,31 @@
         .quienes-box
         {
             grid-template-rows: 0.3fr 0.5fr auto;
+
+
+            & :nth-child(3)
+            {
+                .quienes-foto-d
+                {
+                    height: auto;width: 100%;
+                }
+            }
         }
     
-        .quienes-fDos
+        
+    }
+    .box-contactar
+    {
+        .formulario-box
         {
-            .quienes-foto-d
+            .formulario
             {
-                height: auto;width: 100%;
+                max-width: 90vw;
             }
         }
     }
-.formulario-box
-{
-    .formulario
-    {
-        max-width: 90vw;
-    }
-}
+        
+    
 }
 /*------------------------------------------------------*/
 /*media 1200px*/
@@ -63,13 +71,13 @@
        "fotoBandeja fotoGalleta"
        "textoDos textoDos";
 
-       .pos-img-uno
+       & :nth-child(2)
        {
         border-radius: 38px 0px 0px 38px;
     
        }
 
-       .pos-img-dos
+       & :nth-child(3)
        {
             .img-historia-dos
             {
@@ -85,7 +93,7 @@
     .quienes-box
     {
         
-        .quienes-fDos
+        & :nth-child(3)
         {
             .quienes-foto-d
             {
