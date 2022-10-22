@@ -1,0 +1,99 @@
+
+/*------------------------------------------------------*/
+/*media 1610px*/
+
+@media screen and (max-width: 1610px)
+{
+.contenedor-quienes
+{
+    .quienes-box
+    {
+        .quienes-fDos
+        {
+            .quienes-foto-d
+            {
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+}
+}
+
+/*------------------------------------------------------*/
+/*media 1310px*/
+
+@media screen and (max-width: 1310px)
+{
+    .contenedor-quienes
+    {
+        .quienes-box
+        {
+            grid-template-rows: 0.3fr 0.5fr auto;
+        }
+    
+        .quienes-fDos
+        {
+            .quienes-foto-d
+            {
+                height: auto;width: 100%;
+            }
+        }
+    }
+.formulario-box
+{
+    .formulario
+    {
+        max-width: 90vw;
+    }
+}
+}
+/*------------------------------------------------------*/
+/*media 1200px*/
+
+@media screen and (max-width: 1200px) 
+{
+   /*------------------------------------------------------*/
+   /*Media de seccion historia*/
+   .box-historia
+   {
+       grid-template-rows: auto 500px auto;
+       grid-template-areas: 
+       "texto texto"
+       "fotoBandeja fotoGalleta"
+       "textoDos textoDos";
+
+       .pos-img-uno
+       {
+        border-radius: 38px 0px 0px 38px;
+    
+       }
+
+       .pos-img-dos
+       {
+            .img-historia-dos
+            {
+                border-radius: 0px 38px 38px 0px;
+                width: 100%;
+                height: auto;
+            }
+       }
+   }
+
+.contenedor-quienes
+{
+    .quienes-box
+    {
+        
+        .quienes-fDos
+        {
+            .quienes-foto-d
+            {
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+}
+
+}

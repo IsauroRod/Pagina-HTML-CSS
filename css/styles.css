@@ -1,0 +1,618 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Fauna+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: 400; }
+
+/*------------------------------------------------------*/
+/* Estilos comunes */
+body {
+  background-color: #F5E78E;
+  font-family: 'Fauna One', serif;
+  color: #826754;
+  font-size: 20px; }
+
+header {
+  background-color: #384073; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  font-size: 55px; }
+
+h2 {
+  font-size: 48px; }
+
+h3 {
+  font-size: 40px; }
+
+h4 {
+  font-size: 40px; }
+
+h6, h5, h4, h3, h2, h1 {
+  margin-bottom: 0; }
+
+figure {
+  margin: 0; }
+
+p {
+  margin-bottom: 0; }
+
+ol, ul, dl {
+  margin-bottom: 0; }
+
+article {
+  padding: 0px; }
+
+.enlaces-estilo {
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  transition: background-image .2s;
+  transition: background-color .2s;
+  transition: font-size .2s; }
+  .enlaces-estilo:hover {
+    font-size: 22px;
+    background-image: url(../visuales/galletaSinComer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #826754;
+    margin: 0px 5px;
+    border-radius: 10px;
+    color: #FFFFFF; }
+  .enlaces-estilo:active {
+    background-image: url(../visuales/galletaComida.png);
+    color: #FFFFFF; }
+
+.barra-intermedia {
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 5px 0px; }
+
+.borde-derecho {
+  border-right-width: 3px;
+  border-right-style: solid;
+  border-width: 2px;
+  border-right-color: #FFFFFF; }
+
+.estilos-titulos {
+  font-family: 'Cinzel';
+  width: 100%;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.1em;
+  margin-top: 28px; }
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.titulo-estilo-sec {
+  font-size: 55px;
+  color: #826754; }
+
+.subtitulo-estilo-sec {
+  font-size: 25px;
+  color: #826754; }
+
+.boton-estilo {
+  display: inline-block;
+  text-align: center;
+  font-family: 'Fauna One', serif;
+  font-size: 17px;
+  color: black;
+  border: none;
+  border-radius: 12px;
+  background-color: #A3D9FF;
+  padding: 3px 8px;
+  transition: transform .04s ease-out;
+  transition: background-color .04s ease-out; }
+  .boton-estilo:active {
+    transform: scale(0.95);
+    background-color: #73c5ff; }
+
+.boton-redondo {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%; }
+
+.indep-margin {
+  padding: 28px; }
+
+.paragraph-style {
+  text-align: justify; }
+
+header .img-nav {
+  width: 100%; }
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  padding: 14px 28px;
+  align-items: center; }
+  header .navbar .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px; }
+    header .navbar .menu .navbar .menu .menu-item {
+      display: inline-block; }
+
+/*------------------------------------------------------*/
+/*Footer estilos*/
+footer {
+  display: flex;
+  background-color: #384073;
+  color: #FFFFFF;
+  height: auto;
+  padding: 33px 0px;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Cinzel'; }
+  footer .copyfooter {
+    font-size: 18px;
+    text-align: center; }
+
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px; }
+  .footer .footer-ubicacion {
+    border-radius: 10px;
+    width: 600px;
+    height: 200px;
+    padding: 3px; }
+  .footer .info-titulos {
+    font-size: 30px;
+    text-decoration: underline #826754; }
+  .footer .info-datos {
+    font-size: 20px;
+    text-indent: 15px; }
+
+/*------------------------------------------------------*/
+/*Parte de pedidos*/
+.vender-box {
+  display: flex;
+  justify-content: center; }
+  .vender-box .formulario-vender {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1440px; }
+    .vender-box .formulario-vender .vender {
+      display: flex;
+      flex-direction: column;
+      justify-content: stretch;
+      align-items: center;
+      width: 337px;
+      margin: 20px 20px -17px 20px; }
+      .vender-box .formulario-vender .vender .box-article-photo {
+        height: 392px; }
+        .vender-box .formulario-vender .vender .box-article-photo .vender-imagen {
+          border-radius: 22px;
+          border-style: solid;
+          border-width: 3px;
+          border-color: #384073; }
+        .vender-box .formulario-vender .vender .box-article-photo .vender-precio {
+          display: inline-block;
+          background-color: red;
+          color: #FFFFFF;
+          width: 106px;
+          height: 41px;
+          padding-top: 5px;
+          border-radius: 0px 19px 0px 21px;
+          position: relative;
+          bottom: 390px;
+          left: 235px;
+          text-align: center;
+          z-index: 1; }
+      .vender-box .formulario-vender .vender .botones-vender {
+        display: flex;
+        width: 339px;
+        border-radius: 0px 0px 22px 22px;
+        justify-content: space-evenly;
+        position: relative;
+        bottom: 109.5px;
+        backdrop-filter: blur(3.5px);
+        padding: 5px; }
+      .vender-box .formulario-vender .vender .venta-texto {
+        text-align: center; }
+    .vender-box .formulario-vender .tabla-venta {
+      display: flex;
+      flex-direction: column; }
+      .vender-box .formulario-vender .tabla-venta .boton-procesar {
+        width: 153px;
+        height: 41px;
+        position: relative;
+        bottom: 53px;
+        left: 290px; }
+
+/*------------------------------------------------------*/
+/*Pagina quienes*/
+.contenedor-quienes {
+  display: flex;
+  justify-content: center; }
+  .contenedor-quienes .quienes-box {
+    display: grid;
+    grid-template-columns: 1.5fr 0.97fr;
+    grid-template-rows: 0.3fr 1fr 0fr;
+    grid-template-areas: "textUno imgDos" "imgUno imgDos" "imgUno textDos";
+    gap: 28px;
+    margin: 50px 80px;
+    max-width: 1440px; }
+    .contenedor-quienes .quienes-box .quienes-textoDos {
+      grid-area: textDos; }
+    .contenedor-quienes .quienes-box .quienes-textoUno {
+      grid-area: textUno; }
+    .contenedor-quienes .quienes-box .quienes-fUno {
+      grid-area: imgUno;
+      overflow: hidden;
+      border-radius: 21px; }
+      .contenedor-quienes .quienes-box .quienes-fUno .quienes-foto-i {
+        width: auto;
+        height: 100%; }
+    .contenedor-quienes .quienes-box .quienes-fDos {
+      grid-area: imgDos;
+      overflow: hidden;
+      border-radius: 21px; }
+      .contenedor-quienes .quienes-box .quienes-fDos .quienes-foto-d {
+        width: 100%;
+        height: auto; }
+
+/*------------------------------------------------------*/
+/*Parte de informacion en contacto*/
+.box-contactar {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: baseline;
+  margin: 50px 0px; }
+  .box-contactar .informacion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #A3D9FF;
+    padding: 28px;
+    border-radius: 20px;
+    margin: 28px; }
+    .box-contactar .informacion .cabecera-informacion {
+      text-align: center; }
+    .box-contactar .informacion .datos {
+      color: black; }
+    .box-contactar .informacion .ubicacion {
+      width: 359px;
+      height: 270px; }
+
+/*------------------------------------------------------*/
+/*Parte de mandar el email en contacto*/
+.formulario-box {
+  background-color: #FFFFFF;
+  margin: 28px; }
+  .formulario-box .formulario .cabecera {
+    background-color: #A3D9FF;
+    padding: 28px; }
+  .formulario-box .formulario .tipo-info {
+    display: block;
+    border: none;
+    border-bottom: 1px solid #826754; }
+  .formulario-box .formulario .ped-form {
+    padding: 28px;
+    padding-top: 40px;
+    padding-bottom: 28px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(5, auto);
+    grid-row-gap: 50px; }
+  .formulario-box .formulario .background-grey {
+    background-color: #D9D9D9;
+    max-width: 635px;
+    height: 200px; }
+  .formulario-box .formulario .marg-mod {
+    margin-bottom: -23px; }
+  .formulario-box .formulario .pos-boton {
+    width: 158px;
+    grid-column: 2/3;
+    justify-self: end; }
+  .formulario-box .formulario .pad-boton {
+    padding: 18px 24px; }
+
+/*------------------------------------------------------*/
+/*Articulos de receta*/
+.recetas-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .recetas-box .receta-foto {
+    max-height: 395px;
+    min-width: 290px; }
+    .recetas-box .receta-foto img {
+      border-radius: 20px; }
+  .recetas-box .receta-nombre {
+    font-size: 25px; }
+
+/*------------------------------------------------------*/
+/* Imagen con parallax al inicio */
+.superphoto {
+  height: 92vh;
+  overflow: hidden;
+  background-image: url(../visuales/muchasGalletas.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+/*------------------------------------------------------*/
+/* Seccion donde se habla de la historia de la galleta*/
+#historia {
+  display: flex;
+  justify-content: center; }
+
+.box-historia {
+  display: grid;
+  margin: 28px 80px;
+  gap: 14px;
+  max-width: 1280px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0,2fr 0,7fr 0,1fr;
+  grid-template-areas: "texto fotoGalleta" "fotoBandeja fotoGalleta" "textoDos textoDos"; }
+  .box-historia .textoUno {
+    grid-area: texto; }
+  .box-historia .pos-img-uno {
+    border-radius: 0px 0px 0px 38px;
+    grid-area: fotoBandeja;
+    overflow: hidden; }
+    .box-historia .pos-img-uno .img-historia-uno {
+      width: auto;
+      height: 100%; }
+  .box-historia .pos-img-dos {
+    grid-area: fotoGalleta;
+    border-radius: 0px 38px 38px 0px;
+    overflow: hidden; }
+    .box-historia .pos-img-dos .img-historia-dos {
+      border-radius: 0px 38px 38px 0px;
+      width: auto;
+      height: 100%; }
+  .box-historia .textoDos {
+    grid-area: textoDos; }
+
+/*------------------------------------------------------*/
+/* Segundo background con parallax */
+.background-inter {
+  height: 739px;
+  background-image: url(../visuales/andrew-valdivia-Way9MgCwFg8-unsplash_2.png);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 28px; }
+  .background-inter .box-width {
+    width: 1280px; }
+
+/*------------------------------------------------------*/
+/*Estilos links de redireccionamiento, final de pagina*/
+.box-present {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+  justify-items: center;
+  gap: 20px; }
+  .box-present .present-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .box-present .present-section .title-present {
+      font-size: 32px;
+      color: #826754; }
+    .box-present .present-section .img-presentacion {
+      width: auto;
+      height: 278px;
+      max-width: 573px;
+      overflow: hidden;
+      border-radius: 33px; }
+      .box-present .present-section .img-presentacion img {
+        width: 100%;
+        height: auto;
+        filter: blur(3px); }
+    .box-present .present-section .link-present {
+      color: #FFFFFF;
+      background-color: #384073;
+      padding: 8px 67px;
+      border-radius: 20px;
+      transition: transform .1s ease-out;
+      transition: background-color .1s linear; }
+      .box-present .present-section .link-present:active {
+        transform: scale(0.9);
+        background-color: #293372; }
+
+/*------------------------------------------------------*/
+/*media 1610px*/
+@media screen and (max-width: 1610px) {
+  .contenedor-quienes .quienes-box .quienes-fDos .quienes-foto-d {
+    height: 100%;
+    width: auto; } }
+
+/*------------------------------------------------------*/
+/*media 1310px*/
+@media screen and (max-width: 1310px) {
+  .contenedor-quienes .quienes-box {
+    grid-template-rows: 0.3fr 0.5fr auto; }
+  .contenedor-quienes .quienes-fDos .quienes-foto-d {
+    height: auto;
+    width: 100%; }
+  .formulario-box .formulario {
+    max-width: 90vw; } }
+
+/*------------------------------------------------------*/
+/*media 1200px*/
+@media screen and (max-width: 1200px) {
+  /*------------------------------------------------------*/
+  /*Media de seccion historia*/
+  .box-historia {
+    grid-template-rows: auto 500px auto;
+    grid-template-areas: "texto texto" "fotoBandeja fotoGalleta" "textoDos textoDos"; }
+    .box-historia .pos-img-uno {
+      border-radius: 38px 0px 0px 38px; }
+    .box-historia .pos-img-dos .img-historia-dos {
+      border-radius: 0px 38px 38px 0px;
+      width: 100%;
+      height: auto; }
+  .contenedor-quienes .quienes-box .quienes-fDos .quienes-foto-d {
+    height: 100%;
+    width: auto; } }
+
+/*------------------------------------------------------*/
+/*media 1024px*/
+@media screen and (max-width: 1024px) {
+  .paragraph-style {
+    font-size: 18px; }
+  .contenedor-quienes .quienes-box {
+    grid-template-rows: 0.3fr 1fr 0fr;
+    grid-template-areas: "textUno textUno" "imgUno imgDos" "textDos textDos"; } }
+
+/*------------------------------------------------------*/
+/*media 991.5px - para modificar cosas del bootstrap*/
+@media screen and (max-width: 991.5px) {
+  .bg-caja-collapse {
+    z-index: 2; }
+  .barra-intermedia {
+    display: none; }
+  .navbar-toggler {
+    z-index: 3; } }
+
+/*------------------------------------------------------*/
+/*media 917px*/
+@media screen and (max-width: 917px) {
+  h1 {
+    font-size: 48px; }
+  h2 {
+    font-size: 40px; }
+  h3 {
+    font-size: 31px; }
+  h4 {
+    font-size: 31px; }
+  h5 {
+    font-size: 31px; }
+  .paragraph-style {
+    font-size: 16px; }
+  .box-historia .pos-img-dos .img-historia-dos {
+    border-radius: 0px 38px 38px 0px;
+    width: auto;
+    height: 100%; }
+  .box-present {
+    grid-template-columns: 1fr; }
+    .box-present .present-section .title-present {
+      font-size: 25px;
+      margin-top: 10px; }
+    .box-present .present-section .link-present {
+      font-size: 16px; }
+  .contenedor-quienes .quienes-box {
+    grid-template-rows: 0.3fr 0.8fr 0fr; } }
+
+/*media 768px*/
+@media screen and (max-width: 768px) {
+  .titulo-estilo-sec {
+    font-size: 31px; }
+  .subtitulo-estilo-sec {
+    font-size: 20px; }
+  .paragraph-style {
+    font-size: 14px; }
+  .figure-nav {
+    width: 300px;
+    height: 100%; }
+  .contenedor-quienes .quienes-box {
+    grid-template-rows: repeat(4, auto);
+    margin: 23px 10px;
+    grid-template-areas: "textUno textUno" "imgDos imgDos" "textDos textDos" "imgUno imgUno";
+    gap: 14px; }
+  .contenedor-quienes .quienes-box .quienes-fUno .quienes-foto-i {
+    width: 100%;
+    height: auto; }
+  .contenedor-quienes .quienes-box .quienes-fDos .quienes-foto-d {
+    width: 100%;
+    height: auto; }
+  .box-historia {
+    margin: 28px 10px;
+    grid-template-rows: auto 67vw auto; } }
+
+/*media 600px*/
+@media screen and (max-width: 600px) {
+  /*------------------------------------------------------*/
+  /* Tamaños h*/
+  h1 {
+    font-size: 30px; }
+  h2 {
+    font-size: 30px; }
+  h3 {
+    font-size: 20px; }
+  h4 {
+    font-size: 20px; }
+  h5 {
+    font-size: 20px; }
+  .paragraph-style {
+    font-size: 14px; }
+  h3.cabecera-informacion {
+    font-size: 23px; }
+  h4.subcabecera-informacion {
+    font-size: 23px; } }
+
+/*------------------------------------------------------*/
+/*media 575.98px*/
+@media screen and (max-width: 575.98px) {
+  .figure-nav {
+    width: 225px;
+    height: 100%; }
+  .box-present .present-section .img-presentacion {
+    height: 190px; } }
+
+/*------------------------------------------------------*/
+/*media 480px*/
+@media screen and (max-width: 480px) {
+  .formulario-box .formulario .ped-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+    gap: 5px; }
+  .marg-mod {
+    margin-bottom: 18px; }
+  .vender-box .formulario-vender .vender {
+    width: 280.75px; }
+    .vender-box .formulario-vender .vender .box-article-photo {
+      height: 323px; }
+      .vender-box .formulario-vender .vender .box-article-photo .vender-imagen {
+        height: 100%;
+        width: auto; }
+      .vender-box .formulario-vender .vender .box-article-photo .vender-precio {
+        width: 89px;
+        height: 35px;
+        padding-top: 2px;
+        bottom: 320px;
+        left: 192px; }
+    .vender-box .formulario-vender .vender .venta-texto {
+      font-size: 16px; }
+    .vender-box .formulario-vender .vender .botones-vender {
+      width: 276.75px;
+      bottom: 97.5px; }
+  .vender-box .formulario-vender .tabla-venta .tabla-img {
+    width: 320px;
+    height: auto; }
+  .vender-box .formulario-vender .tabla-venta .boton-procesar {
+    width: 153px;
+    height: 29px;
+    bottom: 38px;
+    left: 152px; } }
+
+/*------------------------------------------------------*/
+/*media 360px*/
+@media screen and (max-width: 360px) {
+  .figure-nav {
+    width: 180px;
+    height: 100%; } }

@@ -1,0 +1,160 @@
+
+/*------------------------------------------------------*/
+/*media 1024px*/
+@media screen and (max-width: 1024px) 
+{
+    .paragraph-style{font-size: 18px;}
+
+    .contenedor-quienes
+    {
+        .quienes-box
+        {
+            grid-template-rows: 0.3fr 1fr 0fr;
+            grid-template-areas: 
+            "textUno textUno"
+            "imgUno imgDos"
+            "textDos textDos";
+        }
+    }
+}
+
+/*------------------------------------------------------*/
+/*media 991.5px - para modificar cosas del bootstrap*/
+
+@media screen and (max-width: 991.5px) 
+{
+    .bg-caja-collapse{z-index: 2;}
+    .barra-intermedia{display: none;}
+    .navbar-toggler{z-index: 3;}
+}
+
+/*------------------------------------------------------*/
+/*media 917px*/
+@media screen and (max-width: 917px)
+{
+    h1{font-size: $text-xl;}
+    h2{font-size: $text-l;}
+    h3{font-size: 31px;}
+    h4{font-size: 31px;}
+    h5{font-size: 31px;}
+
+    .paragraph-style{font-size: 16px;}
+
+    .box-historia
+    {
+        .pos-img-dos
+        {
+            .img-historia-dos
+            {
+                border-radius: 0px 38px 38px 0px;
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+
+    
+    .box-present
+    {
+        grid-template-columns: 1fr;
+        .present-section
+        { 
+            .title-present
+            {
+                font-size: 25px;
+                margin-top: 10px;
+            }
+            .link-present
+            {
+                font-size: 16px;
+            }
+        }
+    }
+    .contenedor-quienes
+    {
+        .quienes-box
+        {
+            grid-template-rows: 0.3fr 0.8fr 0fr;
+        } 
+    }
+    
+}
+
+/*media 768px*/
+@media screen and (max-width: 768px)
+{
+    .titulo-estilo-sec{font-size: 31px;}
+    .subtitulo-estilo-sec{font-size: 20px;}
+    .paragraph-style{font-size: 14px;}
+    .figure-nav{width: 300px; height: 100%;}
+
+    .contenedor-quienes
+    {
+        .quienes-box
+        {
+            grid-template-rows: repeat(4, auto) ;
+            margin: 23px 10px;
+            grid-template-areas: 
+            "textUno textUno"
+            "imgDos imgDos"
+            "textDos textDos"
+            "imgUno imgUno";
+            gap: 14px;
+        }
+    }
+    .contenedor-quienes
+    {
+        .quienes-box
+        {
+            .quienes-fUno
+            {
+                .quienes-foto-i
+                {
+                    width: 100%; 
+                    height: auto;
+                }
+            }
+    
+            .quienes-fDos
+            {
+                .quienes-foto-d
+                {
+                    width: 100%; 
+                    height: auto;
+                }
+            }
+        }
+    
+        
+    }
+
+    .box-historia
+    {
+        margin: 28px 10px; 
+        grid-template-rows:auto 67vw auto;
+    }
+}
+/*media 600px*/
+@media screen and (max-width: 600px)
+{
+/*------------------------------------------------------*/
+/* Tamaños h*/
+h1{font-size: 30px;}
+h2{font-size: 30px;}
+h3{font-size: $text-m;}
+h4{font-size: $text-m;}
+h5{font-size: $text-m ;}
+.paragraph-style{font-size: 14px;}
+
+h3.cabecera-informacion
+    {
+        font-size: 23px ;
+    }
+
+
+h4.subcabecera-informacion
+    {
+        font-size: 23px
+    }
+    
+}

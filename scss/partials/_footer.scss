@@ -1,0 +1,45 @@
+/*------------------------------------------------------*/
+/*Footer estilos*/
+
+footer
+{
+    display: flex;
+    background-color: #384073;
+    color: $blanco;
+    height: auto;
+    padding: 33px 0px;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Cinzel';
+
+    .copyfooter
+    {
+        font-size: 18px;
+        text-align: center;
+    }
+
+}
+
+.footer
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    margin-bottom: 30px;
+
+    .footer-ubicacion
+    {
+        border-radius:10px;
+        width: 600px;
+        height: 200px;
+        padding: 3px;
+    }
+    .info-titulos
+    {
+        font-size: 30px; 
+        text-decoration: underline $marron;
+    }
+    .info-datos{font-size: 20px; text-indent: 15px;}
+}

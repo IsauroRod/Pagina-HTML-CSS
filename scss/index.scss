@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Fauna+One&display=swap');
+@import './misc/normalize';
+@import './misc/variables';
+@import './misc/estilosComunes';
+@import './partials/header';
+@import './partials/footer';
+@import './pages/pedidos';
+@import './pages/quienes';
+@import './pages/contacto';
+@import './pages/recetas';
+
+/*------------------------------------------------------*/
+/* Imagen con parallax al inicio */
+.superphoto
+{
+    height: 92vh;
+    overflow: hidden ;
+    background-image:url(../visuales/muchasGalletas.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*------------------------------------------------------*/
+/* Seccion donde se habla de la historia de la galleta*/
+
+#historia
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.box-historia
+    {
+        display: grid;
+        margin: 28px 80px;
+        gap: 14px;
+        max-width: 1280px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 0,2fr 0,7fr 0,1fr;
+        grid-template-areas: 
+        "texto fotoGalleta"
+        "fotoBandeja fotoGalleta"
+        "textoDos textoDos";
+
+
+        .textoUno
+        {
+            grid-area: texto;
+        }
+
+        .pos-img-uno
+        {
+
+            border-radius: 0px 0px 0px 38px;
+            grid-area: fotoBandeja;
+            overflow: hidden;
+
+            .img-historia-uno
+            {
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        .pos-img-dos
+        {
+            grid-area: fotoGalleta;
+            border-radius: 0px 38px 38px 0px;
+            overflow: hidden;
+
+            .img-historia-dos
+            {
+                border-radius: 0px 38px 38px 0px;
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        .textoDos
+        {
+            grid-area:textoDos ;
+        }
+    }
+
+/*------------------------------------------------------*/
+/* Segundo background con parallax */
+
+.background-inter
+{
+    height: 739px;
+    background-image: url(../visuales/andrew-valdivia-Way9MgCwFg8-unsplash_2.png);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 28px;
+
+    .box-width
+    {
+        width: 1280px;
+    }
+
+}
+
+/*------------------------------------------------------*/
+/*Estilos links de redireccionamiento, final de pagina*/
+
+.box-present
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    overflow: hidden;
+    justify-items: center;
+    gap: 20px; 
+
+    .present-section
+    {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+        .title-present
+        {
+            font-size: 32px;
+            color: $marron;
+        }
+        .img-presentacion
+        {
+            width: auto;
+            height: 278px;
+            max-width: 573px;
+            overflow: hidden;
+            border-radius: 33px;
+
+
+            img
+            {
+                width: 100%;
+                height: auto;
+                filter: blur(3px);
+                
+            }
+            
+        }
+
+        .link-present
+        {
+
+            color: #FFFFFF;
+            background-color: #384073;
+            padding: 8px 67px;
+            border-radius: 20px;
+            transition: transform .1s ease-out;
+            transition: background-color .1s linear;
+
+            &:active
+            {
+                transform: scale(0.9);
+                background-color: #293372;
+            }
+        }
+
+    }
+
+}
+
+@import './partials/mediaDesktop';
+@import './partials/mediaTablet';
+@import './partials/mediaMobile';

@@ -1,0 +1,130 @@
+/*------------------------------------------------------*/
+/* Estilos comunes */
+
+body
+{
+    background-color: $secondary;
+    font-family: 'Fauna One', serif;
+    color:$marron;
+    font-size: $text-m;
+}
+header{background-color: $primary;}
+a{text-decoration: none;}
+h1{font-size: $text-xxl;}
+h2{font-size: $text-xl;}
+h3{font-size: $text-l; }
+h4{font-size: $text-l; }
+h6, h5, h4, h3, h2, h1{margin-bottom: 0;}
+figure {margin: 0}
+p{margin-bottom: 0;}
+ol, ul, dl{margin-bottom:0;}
+article{padding: 0px;}
+
+.enlaces-estilo
+{
+    font-size: $text-s;
+    color: $blanco;
+    padding: 5px 10px;
+    transition:background-image .2s;
+    transition:background-color .2s;
+    transition:font-size .2s;
+
+    &:hover
+    {
+    font-size: 22px;
+    background-image:url(../visuales/galletaSinComer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: $marron;
+    margin: 0px 5px;
+    border-radius: 10px;
+    color:#FFFFFF;  
+    }
+
+    &:active
+    {
+    background-image:url(../visuales/galletaComida.png);
+    color:#FFFFFF;
+    }
+
+}
+
+.barra-intermedia
+{
+
+    font-size: $text-s;
+    color: $blanco;
+    padding: 5px 0px;
+}
+
+.borde-derecho
+{
+    border-right-width: 3px;
+    border-right-style:solid;
+    border-width: 2px;
+    border-right-color: $blanco;
+}
+
+.estilos-titulos
+{
+    font-family: 'Cinzel';
+    width: 100%;
+    text-align: center;
+    color:white;
+    letter-spacing: 0.1em;
+    margin-top: 28px;
+}
+
+.parallax
+{
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+}
+
+.titulo-estilo-sec
+{
+    font-size: $text-xxl;
+    color: $marron;
+}
+
+.subtitulo-estilo-sec
+{
+    font-size: 25px;
+    color: $marron;
+}
+
+.boton-estilo
+{
+    display: inline-block;
+    text-align: center;
+    font-family: 'Fauna One', serif;
+    font-size: 17px;
+    color: black;
+    border:none;
+    border-radius:12px ;
+    background-color: #A3D9FF;
+    padding: 3px 8px;
+    transition: transform .04s ease-out;
+    transition: background-color .04s ease-out;
+
+    &:active
+    {
+    transform: scale(0.95);
+    background-color: #73c5ff;
+    }
+
+}
+
+.boton-redondo
+{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+}
+
+.indep-margin{padding: 28px;}
+
+.paragraph-style{text-align: justify;}

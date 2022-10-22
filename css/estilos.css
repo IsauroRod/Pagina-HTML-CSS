@@ -45,7 +45,7 @@ h1{font-size: var(--text-xxl);}
 h2{font-size: var(--text-xl);}
 h3{font-size: var(--text-l); }
 h4{font-size: var(--text-l); }
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+h6, h5, h4, h3, h2, h1{
     margin-bottom: 0;}
 figure {margin: 0}
 p{margin-bottom: 0;}
@@ -344,7 +344,7 @@ footer
     padding: 33px 0px;
     flex-direction: column;
     align-items: center;
-    font-family: 'Cinzel';;
+    font-family: 'Cinzel';
 }
 
 .copyfooter
@@ -437,25 +437,6 @@ footer
     padding: 5px;
 }
 
-/*------------------------------------------------------*/
-/*Parte de informacion en contacto*/
-
-.informacion
-{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-color:var(--celeste);
-    padding: 28px;
-    border-radius: 20px;
-    margin: 28px;
-}
-
-.cabecera-informacion{text-align: center;}
-
-.datos{color: black;}
-
-
 
 /*------------------------------------------------------*/
 /*Pagina quienes*/
@@ -505,6 +486,25 @@ border-radius: 21px;
 width: 100%;
 height: auto;
 }
+
+
+/*------------------------------------------------------*/
+/*Parte de informacion en contacto*/
+
+.informacion
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color:var(--celeste);
+    padding: 28px;
+    border-radius: 20px;
+    margin: 28px;
+}
+
+.cabecera-informacion{text-align: center;}
+
+.datos{color: black;}
 
 /*------------------------------------------------------*/
 /*Parte de mandar el email en contacto*/
@@ -575,15 +575,6 @@ height: auto;
 
 /*------------------------------------------------------*/
 /*Articulos de receta*/
-.recetas
-{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin: 50px 80px;
-    flex-wrap: wrap;
-}
-
 .recetas-box
 {
     display: flex;

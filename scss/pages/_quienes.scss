@@ -1,0 +1,70 @@
+
+/*------------------------------------------------------*/
+/*Pagina quienes*/
+
+.contenedor-quienes
+{
+    display: flex;
+    justify-content: center;
+    
+    .quienes-box
+    {
+        display: grid;
+        grid-template-columns: 1.5fr 0.97fr;
+        grid-template-rows: 0.3fr 1fr 0fr;
+        grid-template-areas: 
+        "textUno imgDos"
+        "imgUno imgDos"
+        "imgUno textDos";
+        gap:28px;
+        margin: 50px 80px;
+        max-width: 1440px;
+
+
+        .quienes-textoDos
+        {
+            grid-area: textDos;
+        }
+        .quienes-textoUno
+        {
+            grid-area: textUno;
+        }
+
+
+        .quienes-fUno
+        {
+        grid-area: imgUno;
+        overflow: hidden;
+        border-radius: 21px;
+
+            .quienes-foto-i
+            {
+                width: auto;
+                height: 100%;
+            }
+            
+        }
+        .quienes-fDos
+        {
+        grid-area: imgDos;
+        overflow: hidden;
+        border-radius: 21px;
+        
+            .quienes-foto-d
+            {
+            width: 100%;
+            height: auto;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

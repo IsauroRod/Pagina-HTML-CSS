@@ -1,0 +1,112 @@
+/*------------------------------------------------------*/
+/*media 575.98px*/
+@media screen and (max-width: 575.98px) 
+{
+    .figure-nav
+    {
+        width: 225px; height: 100%;
+    }
+
+    .box-present
+    {
+        .present-section
+        {
+            .img-presentacion
+            {
+                height: 190px;
+            }
+        }
+    }
+      
+}
+
+
+/*------------------------------------------------------*/
+/*media 480px*/
+@media screen and (max-width: 480px)
+{
+    .formulario-box
+    {
+        .formulario
+        {
+            .ped-form
+            {
+                display: flex;
+                flex-direction: column;
+                max-width: 90vw;
+                gap: 5px;
+            }
+        }
+    }
+
+    .marg-mod
+    {
+        margin-bottom: 18px;
+    }
+    
+    .vender-box
+    {
+        .formulario-vender
+        {
+            .vender
+            {
+                width: 280.75px;
+                .box-article-photo
+                {
+                    height: 323px;
+
+                    .vender-imagen
+                    {
+                        height: 100%;
+                        width: auto;
+                    }
+
+                    .vender-precio 
+                    {
+                        width: 89px;
+                        height: 35px;
+                        padding-top: 2px;
+                        bottom: 320px;
+                        left: 192px;
+                    }
+                }
+
+                .venta-texto
+                {
+                    font-size: 16px;
+                }
+
+                .botones-vender
+                {
+                    width: 276.75px; bottom:97.5px;
+                }
+            }
+
+            .tabla-venta
+            {
+                .tabla-img
+                {
+                    width: 320px; height: auto;
+                }
+        
+                .boton-procesar 
+                {
+                    width: 153px;
+                    height: 29px;
+                    bottom: 38px;
+                    left: 152px;
+                }
+            }
+        }
+    }
+
+}
+/*------------------------------------------------------*/
+/*media 360px*/
+@media screen and (max-width: 360px) 
+{
+    .figure-nav
+    {
+         width: 180px; height: 100%;
+    }
+}
