@@ -3,13 +3,11 @@
 
 footer
 {
-    display: flex;
+    @include flex(column, flex-start, center, 0);
     background-color: #384073;
     color: $blanco;
     height: auto;
     padding: 33px 0px;
-    flex-direction: column;
-    align-items: center;
     font-family: 'Cinzel';
 
     .copyfooter
@@ -22,12 +20,9 @@ footer
 
 .footer
 {
-    display: flex;
+    @include flex(row, center, center, 30px);
     width: 100%;
-    justify-content: center;
-    align-items: center;
     padding: 0px 10px;
-    gap:30px;
     margin-bottom: 30px;
 
     .footer-info

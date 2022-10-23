@@ -2,13 +2,12 @@
 /*Articulos de receta*/
 .recetas-box
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column, flex-start, center, 0);
 
     .receta-foto
     {
-        max-height: 395px; min-width: 290px;
+        max-height: 395px; 
+        min-width: 290px;
             img
             {
                 border-radius: 20px;

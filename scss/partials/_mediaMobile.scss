@@ -4,7 +4,7 @@
 {
     .figure-nav
     {
-        width: 225px; height: 100%;
+        @include behaviourPhoto(225px, 100%);
     }
 
     .box-present
@@ -36,8 +36,9 @@
                 {
                     display: flex;
                     flex-direction: column;
-                    max-width: 90vw;
                     gap: 5px;
+                    max-width: 90vw;
+                    
                 }
 
                 .marg-mod
@@ -60,8 +61,7 @@
 
                     .vender-imagen
                     {
-                        height: 100%;
-                        width: auto;
+                        @include behaviourPhoto(auto, 100%)
                     }
 
                     .vender-precio 
@@ -69,8 +69,7 @@
                         width: 89px;
                         height: 35px;
                         padding-top: 2px;
-                        bottom: 320px;
-                        left: 192px;
+                        @include position(auto, auto, 320px, 192px);
                     }
                 }
 
@@ -96,8 +95,8 @@
                 {
                     width: 153px;
                     height: 29px;
-                    bottom: 38px;
-                    left: 152px;
+                    @include position(auto, auto, 38px, 152px);
+                    
                 }
             }
         }
@@ -110,6 +109,6 @@
 {
     .figure-nav
     {
-         width: 180px; height: 100%;
+        @include behaviourPhoto(180px, 100%);
     }
 }

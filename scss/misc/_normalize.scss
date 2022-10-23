@@ -6,3 +6,22 @@
     font-style: normal;
     font-weight: 400;
 }
+
+body
+{
+    background-color: $secondary;
+    font-family: 'Fauna One', serif;
+    color:$marron;
+    font-size: $text-m;
+}
+header{background-color: $primary;}
+a{text-decoration: none;}
+h1{font-size: $text-xxl;}
+h2{font-size: $text-xl;}
+h3{font-size: $text-l; }
+h4{font-size: $text-l; }
+h6, h5, h4, h3, h2, h1{margin-bottom: 0;}
+figure {margin: 0}
+p{margin-bottom: 0;}
+ol, ul, dl{margin-bottom:0;}
+article{padding: 0px;}

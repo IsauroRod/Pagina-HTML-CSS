@@ -4,19 +4,15 @@
 
 .contenedor-quienes
 {
-    display: flex;
-    justify-content: center;
+    @include flex(row, center, stretch, 0);
     
     .quienes-box
     {
-        display: grid;
-        grid-template-columns: 1.5fr 0.97fr;
-        grid-template-rows: 0.3fr 1fr 0fr;
+        @include grid(28px, 0.3fr 1fr 0fr, 1.5fr 0.97fr);
         grid-template-areas: 
         "textUno imgDos"
         "imgUno imgDos"
         "imgUno textDos";
-        gap:28px;
         margin: 50px 80px;
         max-width: 1440px;
 
@@ -34,8 +30,7 @@
             
             .quienes-foto-i
             {
-                width: auto;
-                height: 100%;
+                @include behaviourPhoto(auto, 100%)
             }
         }
 
@@ -47,8 +42,7 @@
             
             .quienes-foto-d
             {
-                width: 100%;
-                height: auto;
+                @include behaviourPhoto(100%, auto)
             }
             
         }

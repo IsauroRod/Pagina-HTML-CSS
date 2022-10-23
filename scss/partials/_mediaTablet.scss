@@ -47,8 +47,7 @@
             .img-historia-dos
             {
                 border-radius: 0px 38px 38px 0px;
-                width: auto;
-                height: 100%;
+                @include behaviourPhoto(auto, 100%)
             }
         }
     }
@@ -87,7 +86,10 @@
     .titulo-estilo-sec{font-size: 31px;}
     .subtitulo-estilo-sec{font-size: 20px;}
     .paragraph-style{font-size: 14px;}
-    .figure-nav{width: 300px; height: 100%;}
+    .figure-nav
+    {
+        @include behaviourPhoto(300px, 100%);
+    }
 
     .contenedor-quienes
     {
@@ -111,8 +113,7 @@
             {
                 .quienes-foto-i
                 {
-                    width: 100%; 
-                    height: auto;
+                    @include behaviourPhoto(100%, auto)
                 }
             }
     
@@ -120,8 +121,7 @@
             {
                 .quienes-foto-d
                 {
-                    width: 100%; 
-                    height: auto;
+                    @include behaviourPhoto(100%, auto)
                 }
             }
         }

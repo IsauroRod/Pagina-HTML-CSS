@@ -1,25 +1,6 @@
 /*------------------------------------------------------*/
 /* Estilos comunes */
 
-body
-{
-    background-color: $secondary;
-    font-family: 'Fauna One', serif;
-    color:$marron;
-    font-size: $text-m;
-}
-header{background-color: $primary;}
-a{text-decoration: none;}
-h1{font-size: $text-xxl;}
-h2{font-size: $text-xl;}
-h3{font-size: $text-l; }
-h4{font-size: $text-l; }
-h6, h5, h4, h3, h2, h1{margin-bottom: 0;}
-figure {margin: 0}
-p{margin-bottom: 0;}
-ol, ul, dl{margin-bottom:0;}
-article{padding: 0px;}
-
 .enlaces-estilo
 {
     font-size: $text-s;
@@ -56,14 +37,7 @@ article{padding: 0px;}
     font-size: $text-s;
     color: $blanco;
     padding: 5px 0px;
-}
-
-.borde-derecho
-{
-    border-right-width: 3px;
-    border-right-style:solid;
-    border-width: 2px;
-    border-right-color: $blanco;
+    
 }
 
 .estilos-titulos
@@ -86,12 +60,14 @@ article{padding: 0px;}
 
 .titulo-estilo-sec
 {
+    @extend .estilos-titulos;
     font-size: $text-xxl;
     color: $marron;
 }
 
 .subtitulo-estilo-sec
 {
+    @extend .estilos-titulos;
     font-size: 25px;
     color: $marron;
 }
@@ -124,7 +100,5 @@ article{padding: 0px;}
     height: 37px;
     border-radius: 50%;
 }
-
-.indep-margin{padding: 28px;}
 
 .paragraph-style{text-align: justify;}

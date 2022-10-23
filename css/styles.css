@@ -6,8 +6,6 @@
   font-style: normal;
   font-weight: 400; }
 
-/*------------------------------------------------------*/
-/* Estilos comunes */
 body {
   background-color: #F5E78E;
   font-family: 'Fauna One', serif;
@@ -47,6 +45,8 @@ ol, ul, dl {
 article {
   padding: 0px; }
 
+/*------------------------------------------------------*/
+/* Estilos comunes */
 .enlaces-estilo {
   font-size: 18px;
   color: #FFFFFF;
@@ -73,13 +73,7 @@ article {
   color: #FFFFFF;
   padding: 5px 0px; }
 
-.borde-derecho {
-  border-right-width: 3px;
-  border-right-style: solid;
-  border-width: 2px;
-  border-right-color: #FFFFFF; }
-
-.estilos-titulos {
+.estilos-titulos, .titulo-estilo-sec, .subtitulo-estilo-sec, .titulo-inicio, .secondarytitle, .box-present .present-section .title-present {
   font-family: 'Cinzel';
   width: 100%;
   text-align: center;
@@ -87,7 +81,7 @@ article {
   letter-spacing: 0.1em;
   margin-top: 28px; }
 
-.parallax {
+.parallax, .superphoto, .background-inter {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -101,7 +95,7 @@ article {
   font-size: 25px;
   color: #826754; }
 
-.boton-estilo {
+.boton-estilo, .box-contactar .formulario-box .formulario .boton-contactar {
   display: inline-block;
   text-align: center;
   font-family: 'Fauna One', serif;
@@ -113,7 +107,7 @@ article {
   padding: 3px 8px;
   transition: transform .04s ease-out;
   transition: background-color .04s ease-out; }
-  .boton-estilo:active {
+  .boton-estilo:active, .box-contactar .formulario-box .formulario .boton-contactar:active {
     transform: scale(0.95);
     background-color: #73c5ff; }
 
@@ -122,18 +116,19 @@ article {
   height: 37px;
   border-radius: 50%; }
 
-.indep-margin {
-  padding: 28px; }
-
 .paragraph-style {
   text-align: justify; }
 
 header .img-nav {
-  width: 100%; }
+  width: 100%;
+  height: auto; }
 
 header .navbar {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
   height: auto;
   padding: 14px 28px;
   align-items: center; }
@@ -141,6 +136,7 @@ header .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: stretch;
     gap: 10px; }
     header .navbar .menu .navbar .menu .menu-item {
       display: inline-block; }
@@ -149,12 +145,14 @@ header .navbar {
 /*Footer estilos*/
 footer {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
   background-color: #384073;
   color: #FFFFFF;
   height: auto;
   padding: 33px 0px;
-  flex-direction: column;
-  align-items: center;
   font-family: 'Cinzel'; }
   footer .copyfooter {
     font-size: 18px;
@@ -162,11 +160,12 @@ footer {
 
 .footer {
   display: flex;
-  width: 100%;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px 10px;
   gap: 30px;
+  width: 100%;
+  padding: 0px 10px;
   margin-bottom: 30px; }
   .footer .footer-info {
     border: solid;
@@ -191,10 +190,16 @@ footer {
 /*Parte de pedidos*/
 .vender-box {
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0; }
   .vender-box .formulario-vender {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
+    align-items: stretch;
+    gap: 0;
     flex-wrap: wrap;
     max-width: 1440px; }
     .vender-box .formulario-vender .vender {
@@ -202,6 +207,7 @@ footer {
       flex-direction: column;
       justify-content: stretch;
       align-items: center;
+      gap: 0;
       width: 337px;
       margin: 20px 20px -17px 20px; }
       .vender-box .formulario-vender .vender .box-article-photo {
@@ -220,42 +226,59 @@ footer {
           padding-top: 5px;
           border-radius: 0px 19px 0px 21px;
           position: relative;
+          top: auto;
           bottom: 390px;
+          right: auto;
           left: 235px;
           text-align: center;
           z-index: 1; }
       .vender-box .formulario-vender .vender .botones-vender {
         display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 0;
         width: 339px;
         border-radius: 0px 0px 22px 22px;
         justify-content: space-evenly;
         position: relative;
+        top: auto;
         bottom: 109.5px;
+        right: auto;
+        left: auto;
         backdrop-filter: blur(3.5px);
         padding: 5px; }
       .vender-box .formulario-vender .vender .venta-texto {
         text-align: center; }
     .vender-box .formulario-vender .tabla-venta {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+      gap: 0; }
       .vender-box .formulario-vender .tabla-venta .boton-procesar {
         width: 153px;
         height: 41px;
         position: relative;
+        top: auto;
         bottom: 53px;
+        right: auto;
         left: 290px; }
 
 /*------------------------------------------------------*/
 /*Pagina quienes*/
 .contenedor-quienes {
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0; }
   .contenedor-quienes .quienes-box {
     display: grid;
-    grid-template-columns: 1.5fr 0.97fr;
-    grid-template-rows: 0.3fr 1fr 0fr;
-    grid-template-areas: "textUno imgDos" "imgUno imgDos" "imgUno textDos";
     gap: 28px;
+    grid-template-rows: 0.3fr 1fr 0fr;
+    grid-template-columns: 1.5fr 0.97fr;
+    grid-template-areas: "textUno imgDos" "imgUno imgDos" "imgUno textDos";
     margin: 50px 80px;
     max-width: 1440px; }
     .contenedor-quienes .quienes-box :nth-child(1) {
@@ -281,7 +304,10 @@ footer {
 /*Parte de mandar el email en contacto*/
 .box-contactar {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: stretch;
+  gap: 0;
   margin: 50px 0px; }
   .box-contactar .formulario-box {
     background-color: #FFFFFF;
@@ -298,8 +324,9 @@ footer {
       padding-top: 40px;
       padding-bottom: 28px;
       display: grid;
-      grid-template-columns: auto auto;
+      gap: 0;
       grid-template-rows: repeat(5, auto);
+      grid-template-columns: auto auto;
       grid-row-gap: 50px; }
     .box-contactar .formulario-box .formulario .background-grey {
       background-color: #D9D9D9;
@@ -307,11 +334,10 @@ footer {
       height: 200px; }
     .box-contactar .formulario-box .formulario .marg-mod {
       margin-bottom: -23px; }
-    .box-contactar .formulario-box .formulario .pos-boton {
+    .box-contactar .formulario-box .formulario .boton-contactar {
       width: 158px;
       grid-column: 2/3;
-      justify-self: end; }
-    .box-contactar .formulario-box .formulario .pad-boton {
+      justify-self: end;
       padding: 18px 24px; }
 
 /*------------------------------------------------------*/
@@ -319,7 +345,9 @@ footer {
 .recetas-box {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0; }
   .recetas-box .receta-foto {
     max-height: 395px;
     min-width: 290px; }
@@ -329,28 +357,39 @@ footer {
     font-size: 25px; }
 
 /*------------------------------------------------------*/
-/* Imagen con parallax al inicio */
+/* Imagen con parallax al inicio y texto */
 .superphoto {
   height: 92vh;
   overflow: hidden;
   background-image: url(../visuales/muchasGalletas.jpg);
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0; }
+
+.titulo-inicio {
+  padding: 28px; }
+
+.secondarytitle {
+  padding: 28px; }
 
 /*------------------------------------------------------*/
 /* Seccion donde se habla de la historia de la galleta*/
 #historia {
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0; }
 
 .box-historia {
   display: grid;
-  margin: 28px 80px;
   gap: 14px;
-  max-width: 1280px;
+  grid-template-rows: repeat(3, auto);
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 0,2fr 0,7fr 0,1fr;
+  margin: 28px 80px;
+  max-width: 1280px;
   grid-template-areas: "texto fotoGalleta" "fotoBandeja fotoGalleta" "textoDos textoDos"; }
   .box-historia :nth-child(1) {
     grid-area: texto; }
@@ -378,8 +417,10 @@ footer {
   height: 739px;
   background-image: url(../visuales/andrew-valdivia-Way9MgCwFg8-unsplash_2.png);
   display: flex;
-  align-items: flex-end;
+  flex-direction: row;
   justify-content: center;
+  align-items: flex-end;
+  gap: 0;
   padding: 28px; }
   .background-inter .box-width {
     width: 1280px; }
@@ -388,14 +429,17 @@ footer {
 /*Estilos links de redireccionamiento, final de pagina*/
 .box-present {
   display: grid;
+  gap: 20px;
+  grid-template-rows: auto;
   grid-template-columns: repeat(2, 1fr);
   overflow: hidden;
-  justify-items: center;
-  gap: 20px; }
+  justify-items: center; }
   .box-present .present-section {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0; }
     .box-present .present-section .title-present {
       font-size: 32px;
       color: #826754; }
@@ -424,8 +468,8 @@ footer {
 /*media 1610px*/
 @media screen and (max-width: 1610px) {
   .contenedor-quienes .quienes-box :nth-child(3) .quienes-foto-d {
-    height: 100%;
-    width: auto; } }
+    width: auto;
+    height: 100%; } }
 
 /*------------------------------------------------------*/
 /*media 1310px*/
@@ -433,8 +477,8 @@ footer {
   .contenedor-quienes .quienes-box {
     grid-template-rows: 0.3fr 0.5fr auto; }
     .contenedor-quienes .quienes-box :nth-child(3) .quienes-foto-d {
-      height: auto;
-      width: 100%; }
+      width: 100%;
+      height: auto; }
   .box-contactar .formulario-box .formulario {
     max-width: 90vw; } }
 
@@ -453,8 +497,8 @@ footer {
       width: 100%;
       height: auto; }
   .contenedor-quienes .quienes-box :nth-child(3) .quienes-foto-d {
-    height: 100%;
-    width: auto; } }
+    width: auto;
+    height: 100%; } }
 
 /*------------------------------------------------------*/
 /*media 1024px*/
@@ -576,8 +620,8 @@ footer {
   .box-contactar .formulario-box .formulario .ped-form {
     display: flex;
     flex-direction: column;
-    max-width: 90vw;
-    gap: 5px; }
+    gap: 5px;
+    max-width: 90vw; }
   .box-contactar .formulario-box .formulario .marg-mod {
     margin-bottom: 18px; }
   .vender-box .formulario-vender .vender {
@@ -585,13 +629,16 @@ footer {
     .vender-box .formulario-vender .vender .box-article-photo {
       height: 323px; }
       .vender-box .formulario-vender .vender .box-article-photo .vender-imagen {
-        height: 100%;
-        width: auto; }
+        width: auto;
+        height: 100%; }
       .vender-box .formulario-vender .vender .box-article-photo .vender-precio {
         width: 89px;
         height: 35px;
         padding-top: 2px;
+        position: relative;
+        top: auto;
         bottom: 320px;
+        right: auto;
         left: 192px; }
     .vender-box .formulario-vender .vender .venta-texto {
       font-size: 16px; }
@@ -604,7 +651,10 @@ footer {
   .vender-box .formulario-vender .tabla-venta .boton-procesar {
     width: 153px;
     height: 29px;
+    position: relative;
+    top: auto;
     bottom: 38px;
+    right: auto;
     left: 152px; } }
 
 /*------------------------------------------------------*/

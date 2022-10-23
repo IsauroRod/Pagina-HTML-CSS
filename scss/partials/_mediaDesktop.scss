@@ -12,8 +12,7 @@
         {
             .quienes-foto-d
             {
-                height: 100%;
-                width: auto;
+                @include behaviourPhoto(auto, 100%)
             }
         }
     }
@@ -36,7 +35,7 @@
             {
                 .quienes-foto-d
                 {
-                    height: auto;width: 100%;
+                    @include behaviourPhoto(100%, auto)
                 }
             }
         }
@@ -82,8 +81,7 @@
             .img-historia-dos
             {
                 border-radius: 0px 38px 38px 0px;
-                width: 100%;
-                height: auto;
+                @include behaviourPhoto(100%, auto)
             }
        }
    }
@@ -97,8 +95,7 @@
         {
             .quienes-foto-d
             {
-                height: 100%;
-                width: auto;
+                @include behaviourPhoto(auto, 100%)
             }
         }
     }

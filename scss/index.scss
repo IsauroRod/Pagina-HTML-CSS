@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Fauna+One&display=swap');
-@import './misc/normalize';
 @import './misc/variables';
+@import './misc/mixins';
+@import './misc/normalize';
 @import './misc/estilosComunes';
 @import './partials/header';
 @import './partials/footer';
@@ -10,15 +11,26 @@
 @import './pages/recetas';
 
 /*------------------------------------------------------*/
-/* Imagen con parallax al inicio */
+/* Imagen con parallax al inicio y texto */
 .superphoto
 {
+    @extend .parallax;
     height: 92vh;
     overflow: hidden ;
     background-image:url(../visuales/muchasGalletas.jpg);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex(column, space-between, stretch, 0);
+}
+
+.titulo-inicio
+{
+    @extend .estilos-titulos;
+    padding: 28px;
+} 
+
+.secondarytitle
+{
+    @extend .estilos-titulos;
+    padding: 28px;
 }
 
 /*------------------------------------------------------*/
@@ -26,19 +38,15 @@
 
 #historia
 {
-    display: flex;
-    justify-content: center;
+    @include flex(row, center, stretch, 0);
 }
 
 
 .box-historia
     {
-        display: grid;
+        @include grid(14px, repeat(3, auto), repeat(2,1fr));
         margin: 28px 80px;
-        gap: 14px;
         max-width: 1280px;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 0,2fr 0,7fr 0,1fr;
         grid-template-areas: 
         "texto fotoGalleta"
         "fotoBandeja fotoGalleta"
@@ -59,8 +67,7 @@
 
             .img-historia-uno
             {
-                width: auto;
-                height: 100%;
+                @include behaviourPhoto(auto, 100%);
             }
         }
 
@@ -73,8 +80,8 @@
             .img-historia-dos
             {
                 border-radius: 0px 38px 38px 0px;
-                width: auto;
-                height: 100%;
+                @include behaviourPhoto(auto, 100%);
+
             }
         }
 
@@ -89,11 +96,10 @@
 
 .background-inter
 {
+    @extend .parallax;
     height: 739px;
     background-image: url(../visuales/andrew-valdivia-Way9MgCwFg8-unsplash_2.png);
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    @include flex(row, center, flex-end, 0);
     padding: 28px;
 
     .box-width
@@ -108,35 +114,30 @@
 
 .box-present
 {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    @include grid(20px, auto, repeat(2,1fr));
     overflow: hidden;
     justify-items: center;
-    gap: 20px; 
 
     .present-section
     {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        @include flex(column, flex-start, center, 0);
 
         .title-present
         {
             font-size: 32px;
             color: $marron;
+            @extend .estilos-titulos;
         }
         .img-presentacion
         {
-            width: auto;
-            height: 278px;
+            @include behaviourPhoto(auto, 278px);
             max-width: 573px;
             overflow: hidden;
             border-radius: 33px;
 
             img
             {
-                width: 100%;
-                height: auto;
+                @include behaviourPhoto(100%, auto);
                 filter: blur(3px);
                 
             }

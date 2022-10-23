@@ -1,0 +1,31 @@
+@mixin behaviourPhoto($widht, $heigh)
+{
+    width: $widht;
+    height: $heigh;
+}
+
+@mixin flex ($direction, $princaxis, $secaxis, $gap)
+{
+    display: flex;
+    flex-direction:$direction;
+    justify-content: $princaxis;
+    align-items: $secaxis;
+    gap: $gap;
+}
+
+@mixin grid($gap, $rows, $columns)
+{
+    display: grid;
+    gap: $gap;
+    grid-template-rows: $rows;
+    grid-template-columns: $columns;
+}
+
+@mixin position($top,$right,$bot,$left)
+{
+    position:relative;
+    top: $top;
+    bottom: $bot;
+    right: $right;
+    left: $left;
+}

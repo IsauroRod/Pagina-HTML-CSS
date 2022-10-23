@@ -3,22 +3,17 @@
 
 .vender-box
 {
-   display: flex;
-   justify-content: center;
+    @include flex(row, center, stretch, 0);
     
    .formulario-vender
    {
-       display: flex;
-       justify-content: space-evenly;
+        @include flex(row, space-evenly, stretch, 0);
        flex-wrap: wrap;
        max-width: 1440px;
 
        .vender
        {
-           display: flex;
-           flex-direction: column;
-           justify-content: stretch;
-           align-items: center;
+            @include flex(column, stretch, center, 0);
            width:337px;
            margin:20px 20px -17px 20px;
 
@@ -43,9 +38,7 @@
                     height: 41px;
                     padding-top: 5px;
                     border-radius:0px 19px 0px 21px ;
-                    position: relative;
-                    bottom: 390px;
-                    left: 235px;
+                    @include position(auto, auto, 390px, 235px);
                     text-align: center;
                     z-index: 1;
                 }
@@ -54,12 +47,11 @@
 
             .botones-vender
             {
-                display: flex;
+                @include flex(row, flex-start, stretch, 0);
                 width: 339px;
                 border-radius: 0px 0px 22px 22px ;
                 justify-content: space-evenly;
-                position: relative;
-                bottom: 109.5px;
+                @include position(auto, auto, 109.5px, auto);
                 backdrop-filter: blur(3.5px);
                 padding: 5px;
             }
@@ -71,16 +63,13 @@
 
        .tabla-venta
        {
-           display: flex;
-           flex-direction: column;
+        @include flex(column, flex-start, stretch, 0);
 
            .boton-procesar
            {
                width: 153px;
                height: 41px;
-               position: relative;
-               bottom: 53px;
-               left: 290px;
+               @include position(auto, auto, 53px, 290px);
            }
        }
    } 
