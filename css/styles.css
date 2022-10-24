@@ -56,7 +56,7 @@ article {
   transition: font-size .2s; }
   .enlaces-estilo:hover {
     font-size: 22px;
-    background-image: url(../visuales/galletaSinComer.png);
+    background-image: url(../visuales/galletaSinComer.webp);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -65,7 +65,7 @@ article {
     border-radius: 10px;
     color: #FFFFFF; }
   .enlaces-estilo:active {
-    background-image: url(../visuales/galletaComida.png);
+    background-image: url(../visuales/galletaComida.webp);
     color: #FFFFFF; }
 
 .barra-intermedia {
@@ -361,7 +361,7 @@ footer {
 .superphoto {
   height: 92vh;
   overflow: hidden;
-  background-image: url(../visuales/muchasGalletas.jpg);
+  background-image: url(../visuales/muchasGalletas.webp);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -415,7 +415,7 @@ footer {
 /* Segundo background con parallax */
 .background-inter {
   height: 739px;
-  background-image: url(../visuales/andrew-valdivia-Way9MgCwFg8-unsplash_2.png);
+  background-image: url(../visuales/andrew-valdivia-Way9MgCwFg8-unsplash_2.webp);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -662,4 +662,16 @@ footer {
 @media screen and (max-width: 360px) {
   .figure-nav {
     width: 180px;
-    height: 100%; } }
+    height: 100%; }
+  .vender-box .formulario-vender .vender {
+    margin-left: 0px;
+    margin-right: 0px; }
+  .vender-box .formulario-vender .tabla-venta .tabla-img {
+    width: 296px;
+    height: auto; }
+  .vender-box .formulario-vender .tabla-venta .boton-procesar {
+    position: relative;
+    top: auto;
+    bottom: 36px;
+    right: auto;
+    left: 132px; } }

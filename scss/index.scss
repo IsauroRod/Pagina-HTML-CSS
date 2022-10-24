@@ -17,7 +17,7 @@
     @extend .parallax;
     height: 92vh;
     overflow: hidden ;
-    background-image:url(../visuales/muchasGalletas.jpg);
+    background-image:url(../visuales/muchasGalletas.webp);
     @include flex(column, space-between, stretch, 0);
 }
 
@@ -98,7 +98,7 @@
 {
     @extend .parallax;
     height: 739px;
-    background-image: url(../visuales/andrew-valdivia-Way9MgCwFg8-unsplash_2.png);
+    background-image: url(../visuales/andrew-valdivia-Way9MgCwFg8-unsplash_2.webp);
     @include flex(row, center, flex-end, 0);
     padding: 28px;
 

@@ -88,7 +88,7 @@
             {
                 .tabla-img
                 {
-                    width: 320px; height: auto;
+                    @include behaviourPhoto(320px, auto);
                 }
         
                 .boton-procesar 
@@ -110,5 +110,32 @@
     .figure-nav
     {
         @include behaviourPhoto(180px, 100%);
+    }
+
+
+    .vender-box
+    {
+        .formulario-vender
+        {
+            .vender
+            {
+                margin-left:0px;
+                margin-right: 0px;
+            }
+            .tabla-venta
+            {
+                .tabla-img
+                {
+                    @include behaviourPhoto(296px, auto);
+                }
+
+                .boton-procesar 
+                {
+                    @include position(auto, auto, 36px, 132px);
+                    
+                }
+            }
+
+        }
     }
 }
