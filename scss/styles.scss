@@ -1,0 +1,16 @@
+//Union de todos los archivos scss para compilar//
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Fauna+One&display=swap');
+@import './misc/variables';
+@import './misc/mixins';
+@import './misc/normalize';
+@import './misc/estilosComunes';
+@import './partials/header';
+@import './partials/footer';
+@import './pages/index';
+@import './pages/pedidos';
+@import './pages/quienes';
+@import './pages/contacto';
+@import './pages/recetas';
+@import './partials/mediaDesktop';
+@import './partials/mediaTablet';
+@import './partials/mediaMobile';

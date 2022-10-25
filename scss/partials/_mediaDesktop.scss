@@ -1,6 +1,6 @@
 
-/*------------------------------------------------------*/
-/*media 1610px*/
+//------------------------------------------------------//
+//media 1610px//
 
 @media screen and (max-width: 1610px)
 {
@@ -12,15 +12,15 @@
         {
             .quienes-foto-d
             {
-                @include behaviourPhoto(auto, 100%)
+                @include behaviourPhoto(auto, 100%, true)
             }
         }
     }
 }
 }
 
-/*------------------------------------------------------*/
-/*media 1310px*/
+//------------------------------------------------------//
+//media 1310px//
 
 @media screen and (max-width: 1310px)
 {
@@ -35,7 +35,7 @@
             {
                 .quienes-foto-d
                 {
-                    @include behaviourPhoto(100%, auto)
+                    @include behaviourPhoto(100%, auto, true)
                 }
             }
         }
@@ -55,13 +55,13 @@
         
     
 }
-/*------------------------------------------------------*/
-/*media 1200px*/
+//------------------------------------------------------//
+//media 1200px//
 
 @media screen and (max-width: 1200px) 
 {
-   /*------------------------------------------------------*/
-   /*Media de seccion historia*/
+   //------------------------------------------------------//
+   //Media de seccion historia//
    .box-historia
    {
        grid-template-rows: auto 500px auto;
@@ -81,7 +81,7 @@
             .img-historia-dos
             {
                 border-radius: 0px 38px 38px 0px;
-                @include behaviourPhoto(100%, auto)
+                @include behaviourPhoto(100%, auto, true)
             }
        }
    }
@@ -95,7 +95,7 @@
         {
             .quienes-foto-d
             {
-                @include behaviourPhoto(auto, 100%)
+                @include behaviourPhoto(auto, 100%, true)
             }
         }
     }

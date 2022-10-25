@@ -1,10 +1,10 @@
-/*------------------------------------------------------*/
-/*media 575.98px*/
+//------------------------------------------------------//
+//media 575.98px//
 @media screen and (max-width: 575.98px) 
 {
     .figure-nav
     {
-        @include behaviourPhoto(225px, 100%);
+        @include behaviourPhoto(225px, 100%, true);
     }
 
     .box-present
@@ -21,8 +21,8 @@
 }
 
 
-/*------------------------------------------------------*/
-/*media 480px*/
+//------------------------------------------------------//
+//media 480px//
 @media screen and (max-width: 480px)
 {
 
@@ -61,7 +61,7 @@
 
                     .vender-imagen
                     {
-                        @include behaviourPhoto(auto, 100%)
+                        @include behaviourPhoto(auto, 100%, true)
                     }
 
                     .vender-precio 
@@ -88,7 +88,7 @@
             {
                 .tabla-img
                 {
-                    @include behaviourPhoto(320px, auto);
+                    @include behaviourPhoto(320px, auto, true);
                 }
         
                 .boton-procesar 
@@ -103,13 +103,13 @@
     }
 
 }
-/*------------------------------------------------------*/
-/*media 360px*/
+//------------------------------------------------------//
+//media 360px//
 @media screen and (max-width: 360px) 
 {
     .figure-nav
     {
-        @include behaviourPhoto(180px, 100%);
+        @include behaviourPhoto(180px, 100%, true);
     }
 
 
@@ -126,7 +126,7 @@
             {
                 .tabla-img
                 {
-                    @include behaviourPhoto(296px, auto);
+                    @include behaviourPhoto(296px, auto, true);
                 }
 
                 .boton-procesar 

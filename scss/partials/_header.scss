@@ -1,6 +1,6 @@
 header
 {
-    .img-nav{@include behaviourPhoto(100%, auto)}
+    .img-nav{@include behaviourPhoto(100%, auto, false)}
     .navbar 
     {
         @include flex(row, space-between, stretch, 0);

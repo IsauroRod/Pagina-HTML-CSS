@@ -1,31 +1,83 @@
-@mixin behaviourPhoto($widht, $heigh)
+@mixin behaviourPhoto($widht, $heigh, $bool)
 {
-    width: $widht;
-    height: $heigh;
+    // La razon por la que utilice un booleano aca, fue principalmente porque me es util en ciertos casos conocer ambos datos, como en los media query, que debo cambiar un valor de 100% a auto y el otro al contrario (de auto a 100%) por ejemplo. Cuando necesito conocer ambos, utilizo el true//
+
+    @if $bool == true
+    {
+        width: $widht;
+        height: $heigh;
+    }
+    @else
+    {
+        @if $widht == auto
+        {
+            height: $heigh; 
+        }
+        @else
+        {
+            width: $widht;  
+        }
+    }
+        
+
 }
 
 @mixin flex ($direction, $princaxis, $secaxis, $gap)
 {
     display: flex;
-    flex-direction:$direction;
-    justify-content: $princaxis;
-    align-items: $secaxis;
-    gap: $gap;
+    @if $direction != row
+    {
+        flex-direction:$direction;
+    }
+    @if $princaxis != flex-start
+    {
+        justify-content: $princaxis;
+    }
+    @if $secaxis != stretch
+    {
+        align-items: $secaxis;
+    }
+    @if $gap != 0
+    {
+        gap: $gap;
+    }
 }
 
 @mixin grid($gap, $rows, $columns)
 {
     display: grid;
-    gap: $gap;
+    @if $gap != 0
+    {
+        gap: $gap;
+    }
     grid-template-rows: $rows;
     grid-template-columns: $columns;
+    
+    
+
 }
 
 @mixin position($top,$right,$bot,$left)
 {
     position:relative;
-    top: $top;
-    bottom: $bot;
-    right: $right;
-    left: $left;
+    @if $top != auto
+    {
+        top: $top;
+    }
+    @if $bot != auto
+    {
+        bottom: $bot;
+    }
+    @if $right != auto
+    {
+        right: $right;
+    }
+    @if $left != auto
+    {
+        left: $left;
+    }
+
+
+
 }
+// Hice utilizacion de los condicionales para reducir el codigo innecesario que generaban mis mixins en versiones anteriores, haciendo siempre que no se escriban aquellos que estan con valores por defecto, esto hara mi css mas corto y liviano, a cambio este pequeño costo que no afectaria en el funcionamiento de la pagina//

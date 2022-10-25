@@ -1,6 +1,6 @@
 
-/*------------------------------------------------------*/
-/*media 1024px*/
+//------------------------------------------------------//
+//media 1024px//
 @media screen and (max-width: 1024px) 
 {
     .paragraph-style{font-size: 18px;}
@@ -18,8 +18,8 @@
     }
 }
 
-/*------------------------------------------------------*/
-/*media 991.5px - para modificar cosas del bootstrap*/
+//------------------------------------------------------//
+//media 991.5px - para modificar cosas del bootstrap//
 
 @media screen and (max-width: 991.5px) 
 {
@@ -28,8 +28,8 @@
     .navbar-toggler{z-index: 3;}
 }
 
-/*------------------------------------------------------*/
-/*media 917px*/
+//------------------------------------------------------//
+//media 917px//
 @media screen and (max-width: 917px)
 {
     h1{font-size: $text-xl;}
@@ -47,7 +47,7 @@
             .img-historia-dos
             {
                 border-radius: 0px 38px 38px 0px;
-                @include behaviourPhoto(auto, 100%)
+                @include behaviourPhoto(auto, 100%, true)
             }
         }
     }
@@ -79,8 +79,8 @@
     
 }
 
-/*------------------------------------------------------*/
-/*media 768px*/
+//------------------------------------------------------//
+//media 768px//
 @media screen and (max-width: 768px)
 {
     .titulo-estilo-sec{font-size: 31px;}
@@ -88,7 +88,7 @@
     .paragraph-style{font-size: 14px;}
     .figure-nav
     {
-        @include behaviourPhoto(300px, 100%);
+        @include behaviourPhoto(300px, 100%, true);
     }
 
     .contenedor-quienes
@@ -113,7 +113,7 @@
             {
                 .quienes-foto-i
                 {
-                    @include behaviourPhoto(100%, auto)
+                    @include behaviourPhoto(100%, auto, true)
                 }
             }
     
@@ -121,7 +121,7 @@
             {
                 .quienes-foto-d
                 {
-                    @include behaviourPhoto(100%, auto)
+                    @include behaviourPhoto(100%, auto, true)
                 }
             }
         }
@@ -136,6 +136,7 @@
         margin-bottom: 20px;
         .footer-ubicacion
         {
+            max-width: 550px;
             width: 100%;
         }
 
@@ -158,8 +159,8 @@
     }
 }
 
-/*------------------------------------------------------*/
-/*media 600px*/
+//------------------------------------------------------//
+//media 600px//
 @media screen and (max-width: 600px)
 {
 h1{font-size: 30px;}

@@ -1,17 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Fauna+One&display=swap');
-@import './misc/variables';
-@import './misc/mixins';
-@import './misc/normalize';
-@import './misc/estilosComunes';
-@import './partials/header';
-@import './partials/footer';
-@import './pages/pedidos';
-@import './pages/quienes';
-@import './pages/contacto';
-@import './pages/recetas';
-
-/*------------------------------------------------------*/
-/* Imagen con parallax al inicio y texto */
+//------------------------------------------------------//
+// Imagen con parallax al inicio y texto //
 .superphoto
 {
     @extend .parallax;
@@ -33,8 +21,8 @@
     padding: 28px;
 }
 
-/*------------------------------------------------------*/
-/* Seccion donde se habla de la historia de la galleta*/
+//------------------------------------------------------//
+// Seccion donde se habla de la historia de la galleta//
 
 #historia
 {
@@ -67,7 +55,7 @@
 
             .img-historia-uno
             {
-                @include behaviourPhoto(auto, 100%);
+                @include behaviourPhoto(auto, 100%, false);
             }
         }
 
@@ -80,7 +68,7 @@
             .img-historia-dos
             {
                 border-radius: 0px 38px 38px 0px;
-                @include behaviourPhoto(auto, 100%);
+                @include behaviourPhoto(auto, 100%, false);
 
             }
         }
@@ -91,8 +79,8 @@
         }
     }
 
-/*------------------------------------------------------*/
-/* Segundo background con parallax */
+//------------------------------------------------------//
+// Segundo background con parallax //
 
 .background-inter
 {
@@ -109,8 +97,8 @@
 
 }
 
-/*------------------------------------------------------*/
-/*Estilos links de redireccionamiento, final de pagina*/
+//------------------------------------------------------//
+//Estilos links de redireccionamiento, final de pagina//
 
 .box-present
 {
@@ -130,14 +118,14 @@
         }
         .img-presentacion
         {
-            @include behaviourPhoto(auto, 278px);
+            @include behaviourPhoto(auto, 278px, false);
             max-width: 573px;
             overflow: hidden;
             border-radius: 33px;
 
             img
             {
-                @include behaviourPhoto(100%, auto);
+                @include behaviourPhoto(100%, auto, false);
                 filter: blur(3px);
                 
             }
@@ -164,7 +152,3 @@
     }
 
 }
-
-@import './partials/mediaDesktop';
-@import './partials/mediaTablet';
-@import './partials/mediaMobile';

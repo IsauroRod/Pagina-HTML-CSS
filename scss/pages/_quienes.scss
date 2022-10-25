@@ -1,6 +1,6 @@
 
-/*------------------------------------------------------*/
-/*Pagina quienes*/
+//------------------------------------------------------//
+//Pagina quienes//
 
 .contenedor-quienes
 {
@@ -30,7 +30,7 @@
             
             .quienes-foto-i
             {
-                @include behaviourPhoto(auto, 100%)
+                @include behaviourPhoto(auto, 100%, false)
             }
         }
 
@@ -42,7 +42,7 @@
             
             .quienes-foto-d
             {
-                @include behaviourPhoto(100%, auto)
+                @include behaviourPhoto(100%, auto, false)
             }
             
         }
