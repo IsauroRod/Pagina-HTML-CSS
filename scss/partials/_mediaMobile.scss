@@ -95,8 +95,8 @@
                 {
                     width: 153px;
                     height: 29px;
-                    @include position(auto, auto, 38px, 152px);
-                    
+                    transform: scale(0.85);
+                    @include position(auto, auto, 38px, 164px);
                 }
             }
         }
@@ -131,7 +131,7 @@
 
                 .boton-procesar 
                 {
-                    @include position(auto, auto, 36px, 132px);
+                    @include position(auto, auto, 36px, 142px);
                     
                 }
             }

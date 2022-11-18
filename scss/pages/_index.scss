@@ -2,22 +2,19 @@
 // Imagen con parallax al inicio y texto //
 .superphoto
 {
-    @extend .parallax;
     height: 92vh;
     overflow: hidden ;
-    background-image:url(../visuales/muchasGalletas.webp);
+    background-image:url(../visuales/muchasGalletas-min.webp);
     @include flex(column, space-between, stretch, 0);
 }
 
 .titulo-inicio
 {
-    @extend .estilos-titulos;
     padding: 28px;
 } 
 
 .secondarytitle
 {
-    @extend .estilos-titulos;
     padding: 28px;
 }
 
@@ -84,15 +81,14 @@
 
 .background-inter
 {
-    @extend .parallax;
-    height: 739px;
-    background-image: url(../visuales/andrew-valdivia-Way9MgCwFg8-unsplash_2.webp);
+    height: 600px;
+    background-image: url(../visuales/andrew-valdivia-Way9MgCwFg8-unsplash_2-min.webp);
     @include flex(row, center, flex-end, 0);
-    padding: 28px;
 
     .box-width
     {
         width: 1280px;
+        padding: 28px;
     }
 
 }
@@ -105,6 +101,7 @@
     @include grid(20px, auto, repeat(2,1fr));
     overflow: hidden;
     justify-items: center;
+    margin: 28px 0px;
 
     .present-section
     {
@@ -114,7 +111,6 @@
         {
             font-size: 32px;
             color: $marron;
-            @extend .estilos-titulos;
         }
         .img-presentacion
         {

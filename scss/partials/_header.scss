@@ -1,28 +1,5 @@
 header
 {
     .img-nav{@include behaviourPhoto(100%, auto, false)}
-    .navbar 
-    {
-        @include flex(row, space-between, stretch, 0);
-        height: auto;
-        padding: 14px 28px;
-        align-items: center;
-
-        .menu
-        {
-            @include flex(row, space-evenly, stretch, 10px);
-            
-            .navbar
-            {
-                .menu
-                {
-                    .menu-item
-                    {
-                        display: inline-block;
-                    }
-                }
-            }
-        }
-    }
 }
 

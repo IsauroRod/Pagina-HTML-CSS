@@ -13,7 +13,7 @@
     &:hover
     {
     font-size: 22px;
-    background-image:url(../visuales/galletaSinComer.webp);
+    background-image:url(../visuales/galletaSinComer-min.webp);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -25,7 +25,7 @@
 
     &:active
     {
-    background-image:url(../visuales/galletaComida.webp);
+    background-image:url(../visuales/galletaComida-min.webp);
     color:#FFFFFF;
     }
 
@@ -43,11 +43,9 @@
 .estilos-titulos
 {
     font-family: 'Cinzel';
-    width: 100%;
     text-align: center;
     color:white;
     letter-spacing: 0.1em;
-    margin-top: 28px;
 }
 
 .parallax
@@ -60,16 +58,17 @@
 
 .titulo-estilo-sec
 {
-    @extend .estilos-titulos;
     font-size: $text-xxl;
     color: $marron;
+    margin-top: 28px;
+
 }
 
 .subtitulo-estilo-sec
 {
-    @extend .estilos-titulos;
     font-size: 25px;
     color: $marron;
+    margin-bottom: 28px;
 }
 
 .boton-estilo

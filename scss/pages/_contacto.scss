@@ -3,7 +3,6 @@
 .box-contactar
 {
     @include flex(row, center, stretch, 0);
-    margin: 50px 0px;
 
     .formulario-box
     {
@@ -22,7 +21,8 @@
             {
                 display: block;
                 border:none;
-            
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
                 border-bottom: 1px solid $marron;
             }
 
@@ -33,6 +33,7 @@
                 padding-bottom: 28px;
                 @include grid(0, repeat(5,auto), auto auto);
                 grid-row-gap: 50px;
+                grid-column-gap: 8px;
             }
 
             .background-grey
@@ -40,6 +41,8 @@
                 background-color: #D9D9D9;
                 max-width: 900px;
                 height: 200px;
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
             }
             .marg-mod
             {
@@ -48,7 +51,6 @@
 
             .boton-contactar
             {
-                @extend .boton-estilo;
                 width: 158px;
                 grid-column: 2/3;
                 justify-self: end;
